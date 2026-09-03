@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -u
+
+repository_root=$(git rev-parse --show-toplevel) || exit 1
+cd "$repository_root" || exit 1
+
+echo "Running test suite before push..."
+if npm test; then
+  echo "Tests passed. Push may continue."
+  exit 0
+fi
+
+echo "Tests failed. Push blocked."
+exit 1
