@@ -11,7 +11,7 @@ Implement and verify the Purchase Order backlog only:
 - PO submission flow
 - Allocation and status-transition tests
 
-The PO backend and database schema are already implemented. The frontend is the primary implementation backlog.
+The PO backend, database schema, and Vue list/create/detail pages are implemented. This runbook now serves as the verification and follow-up guide for the completed PO module.
 
 Explicitly out of scope for this sprint:
 
@@ -74,14 +74,14 @@ The backend remains authoritative for:
    - `createPurchaseOrder`
    - `getPurchaseOrder`
    - `submitPurchaseOrder`
-   - `getOpenPoLines`
+   - `getPurchaseOrderOpenLines`
 6. Add these routes to `frontend/src/router/index.js`:
    - `/purchase-orders`
    - `/purchase-orders/new`
    - `/purchase-orders/:id`
 7. Add the Purchase Orders navigation link and active state to `frontend/src/App.vue`.
 
-**Checkpoint 1:** Build the frontend:
+**Checkpoint 1:** Build the frontend and confirm all PO routes resolve:
 
 ```bash
 npm --prefix frontend run build
@@ -91,13 +91,13 @@ The build passes and all three PO paths resolve without module or router errors.
 
 ### 2. PO List and Detail Read Flows
 
-8. Create `frontend/src/pages/PurchaseOrderListPage.vue` using the requisition list page as the template.
+8. `frontend/src/pages/PurchaseOrderListPage.vue` uses the requisition list page as its template.
    - Load POs on mount.
    - Display PO number, vendor, status, and creation date.
    - Link each row to detail.
    - Include a New PO action.
    - Display an empty state and API errors.
-9. Create `frontend/src/pages/PurchaseOrderDetailPage.vue` using the requisition detail page as the template.
+9. `frontend/src/pages/PurchaseOrderDetailPage.vue` uses the requisition detail page as its template.
    - Display PO header, vendor, status, and lines.
    - Display ordered, received, and open quantities.
    - Display unit price and PR allocation sources.
@@ -115,7 +115,7 @@ The seeded PO appears in the list and detail pages. A submitted PO does not show
 
 ### 3. PO Creation from Approved PR Lines
 
-10. Create `frontend/src/pages/PurchaseOrderCreatePage.vue` using the existing form and table conventions.
+10. `frontend/src/pages/PurchaseOrderCreatePage.vue` uses the existing generated header form and allocation table components.
 11. Require a vendor name.
 12. Load available approved PR open lines.
 13. Allow one or more PR lines to be selected.
@@ -123,13 +123,13 @@ The seeded PO appears in the list and detail pages. A submitted PO does not show
 15. Allow only positive quantities no greater than the displayed remaining quantity.
 16. Submit the required PO payload, including the PR line id and copied item fields.
 17. Treat the backend as the validation authority for stale quantities and concurrency conflicts.
-18. On success, navigate to the new PO detail page.
+18. On success, show draft or submitted feedback. The current page stays in place; the PO can be opened from the PO list.
 19. Show backend validation errors and allow the user to retry.
 
 **Checkpoint 3:** Complete this journey manually:
 
 ```text
-Approved PR -> New PO -> select PR line -> create PO -> PO detail
+Approved PR -> New PO -> select PR line -> create PO -> PO list -> PO detail
 ```
 
 Verify that non-approved or unavailable lines cannot be selected, invalid quantities are blocked, and an API over-allocation error is visible.
@@ -148,7 +148,7 @@ Verify that non-approved or unavailable lines cannot be selected, invalid quanti
    - PO submission
    - PO detail showing `SUBMITTED`
    - submit control absent or disabled afterward
-23. Add a narrow frontend unit test only if it fits the existing Vitest setup; do not add another test framework.
+23. Frontend Jest tests are already present in `frontend/tests/` for PO create, list, and detail behavior. Keep new tests in Jest; do not add another test framework.
 
 **Checkpoint 4:** Run all project checks:
 
@@ -169,7 +169,7 @@ Run E2E against a clean database seed when tests depend on mutable PO data.
 27. Update `docs/plan.md` to include the PO list endpoint and the explicit sprint exclusions.
 28. Confirm no GR or unrelated workflow code was added.
 
-**Checkpoint 5:** PO list, create, detail, submit, and open-lines behavior are verified; allocation and status rules are tested; all required checks pass; scope remains limited to the PO backlog.
+**Checkpoint 5:** PO list, create, detail, submit, and open-lines behavior are verified; allocation and status rules are tested; frontend Jest and backend Jest suites pass; scope remains limited to the PO backlog. Playwright journey coverage is the remaining verification item.
 
 ## Relevant Files
 
@@ -184,7 +184,10 @@ Run E2E against a clean database seed when tests depend on mutable PO data.
 - `frontend/src/pages/PurchaseOrderDetailPage.vue` - new PO detail page
 - `frontend/src/pages/RequisitionListPage.vue` - list page implementation pattern
 - `frontend/src/pages/RequisitionDetailPage.vue` - detail page implementation pattern
-- `tests/e2e/` - PO journey coverage
+- `frontend/tests/PurchaseOrderCreatePage.test.js` - PO create and component tests
+- `frontend/tests/PurchaseOrderListPage.test.js` - PO list tests
+- `frontend/tests/PurchaseOrderDetailPage.test.js` - PO detail and submission tests
+- `tests/e2e/` - planned PO journey coverage
 - `docs/plan.md` - corrected scope and API inventory
 
 ## MVP Decisions
@@ -194,3 +197,19 @@ Run E2E against a clean database seed when tests depend on mutable PO data.
 - The backend owns allocation and concurrency validation.
 - `requiredDate` is optional and may be null.
 - Draft PO editing and deletion are not required for this sprint.
+
+## Latest Verification
+
+Verified on 2026-09-03:
+
+- Backend Jest: 3 suites, 29 tests passed
+- Frontend Jest: 3 suites, 14 tests passed
+- Frontend Vite production build passed
+- `git diff --check` passed
+
+The tracked pre-push hook is stored at `.githooks/pre-push` and runs the root `npm test` command before a push. Git is configured to use it through `core.hooksPath`.
+
+## Current Follow-Up
+
+- Add Playwright coverage for the complete approved PR -> create PO -> submit PO journey.
+- Consider navigating to the new PO detail page after successful create/submit if that workflow is preferred over the current in-place feedback.
