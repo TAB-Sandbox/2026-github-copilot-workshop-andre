@@ -43,6 +43,13 @@ describe('requisition-service list functions', () => {
         updatedAt: '2026-05-01T10:00:00.000Z',
       },
     ]);
+    expect(db.query).toHaveBeenCalledWith(expect.stringContaining('ORDER BY created_at DESC'));
+  });
+
+  test('listRequisitions returns an empty list when no requisitions exist', async () => {
+    const db = mockDb(() => ({ rows: [], rowCount: 0 }));
+
+    await expect(listRequisitions(db)).resolves.toEqual([]);
   });
 
   test('getRequisitionOpenLines returns null when requisition not found', async () => {
