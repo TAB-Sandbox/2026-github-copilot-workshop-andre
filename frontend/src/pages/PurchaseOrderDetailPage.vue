@@ -9,6 +9,7 @@
         </div>
       </div>
       <div v-if="purchaseOrder" class="btn-group">
+        <RouterLink v-if="canReceive" class="btn btn-outline" :to="{ path: '/goods-receipts/new', query: { poId: purchaseOrder.id } }">Receive Goods</RouterLink>
         <button v-if="purchaseOrder.status === 'DRAFT'" class="btn btn-primary" :disabled="isSubmitting" @click="submitPurchaseOrder">
           {{ isSubmitting ? 'Submitting...' : 'Submit PO' }}
         </button>
@@ -23,12 +24,12 @@
         <p class="form-section-title">PO Header</p>
         <div class="form-row">
           <div class="form-group">
-            <label>PO Number</label>
-            <input :value="purchaseOrder.poNumber" disabled />
+            <label for="po-number-detail">PO Number</label>
+            <input id="po-number-detail" :value="purchaseOrder.poNumber" disabled />
           </div>
           <div class="form-group">
-            <label>Vendor</label>
-            <input :value="purchaseOrder.vendorName" disabled />
+            <label for="vendor-name-detail">Vendor</label>
+            <input id="vendor-name-detail" :value="purchaseOrder.vendorName" disabled />
           </div>
           <div class="form-group">
             <label>Status</label>
@@ -87,7 +88,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { RouterLink, useRoute } from 'vue-router';
 import { api } from '../api';
 
@@ -96,6 +97,7 @@ const purchaseOrder = ref(null);
 const isLoading = ref(true);
 const isSubmitting = ref(false);
 const errorMessage = ref('');
+const canReceive = computed(() => purchaseOrder.value?.status === 'SUBMITTED' && purchaseOrder.value.lines.some((line) => line.qtyOpenForGr > 0));
 
 function formatPrice(value) {
   return new Intl.NumberFormat('id-ID').format(value);
