@@ -12,6 +12,8 @@ playwright-report/
 backend/coverage/
 frontend/coverage/
 graphify-out/cache/
+graphify-out/.graphify_root
+graphify-out/.graphify_python
 
 # Additional generated artifacts from test runners and coverage tools
 *.lcov

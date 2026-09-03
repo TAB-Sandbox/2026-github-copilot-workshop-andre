@@ -70,7 +70,7 @@ function buildPayload() {
       qtyOrdered: line.qtyOrdered,
       unitPrice: line.unitPrice,
       uom: line.uom,
-      siteCode: line.siteCode || line.deliveryAddress || 'DEFAULT',
+      siteCode: line.siteCode || 'DEFAULT',
       requiredDate: line.deliveryDate || null,
     })),
   };

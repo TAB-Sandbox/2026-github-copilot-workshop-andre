@@ -13,7 +13,7 @@
           <tr>
             <th>Select</th><th>PR No</th><th>PR Line</th><th>Item Code</th><th>Item Name</th><th>UOM</th>
             <th>Requested QTY</th><th>Allocated QTY</th><th>Remaining QTY</th><th>Order QTY</th>
-            <th>Delivery Address</th><th>Delivery Date</th><th>Unit Price</th><th>Line Ammount</th>
+            <th>Delivery Address</th><th>Delivery Date</th><th>Unit Price</th><th>Line Amount</th>
           </tr>
         </thead>
         <tbody>
@@ -56,7 +56,7 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(['update:modelValue', 'refresh']);
 const selectedCount = computed(() => props.modelValue.filter((line) => line.selected).length);
 
 function updateLine(prLineId, changes) {
