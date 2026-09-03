@@ -4,8 +4,23 @@
       "frontend_src_api",
       "frontend_src_api_api",
       "frontend_src_api_apifetch",
+      "frontend_src_main",
       "frontend_src_pages_dashboardpage",
       "frontend_src_pages_dashboardpage_stats",
+      "frontend_src_pages_goodsreceiptdetailpage",
+      "frontend_src_pages_goodsreceiptdetailpage_errormessage",
+      "frontend_src_pages_goodsreceiptdetailpage_isloading",
+      "frontend_src_pages_goodsreceiptdetailpage_isposting",
+      "frontend_src_pages_goodsreceiptdetailpage_load",
+      "frontend_src_pages_goodsreceiptdetailpage_post",
+      "frontend_src_pages_goodsreceiptdetailpage_receipt",
+      "frontend_src_pages_goodsreceiptdetailpage_route",
+      "frontend_src_pages_goodsreceiptlistpage",
+      "frontend_src_pages_goodsreceiptlistpage_errormessage",
+      "frontend_src_pages_goodsreceiptlistpage_formatdate",
+      "frontend_src_pages_goodsreceiptlistpage_isloading",
+      "frontend_src_pages_goodsreceiptlistpage_items",
+      "frontend_src_pages_goodsreceiptlistpage_load",
       "frontend_src_pages_purchaseorderlistpage",
       "frontend_src_pages_purchaseorderlistpage_errormessage",
       "frontend_src_pages_purchaseorderlistpage_formatdate",
@@ -15,11 +30,11 @@
       "frontend_src_pages_requisitionlistpage",
       "frontend_src_pages_requisitionlistpage_errormessage",
       "frontend_src_pages_requisitionlistpage_items",
+      "frontend_src_router_index",
+      "frontend_src_router_index_router",
+      "frontend_src_router_index_routes",
       "frontend_tests_purchaseordercreatepage_test",
       "frontend_tests_purchaseordercreatepage_test_api_mockapi",
-      "frontend_tests_purchaseorderdetailpage_test",
-      "frontend_tests_purchaseorderdetailpage_test_api_mockapi",
-      "frontend_tests_purchaseorderdetailpage_test_purchaseorder",
       "frontend_tests_purchaseorderlistpage_test",
       "frontend_tests_purchaseorderlistpage_test_api_mockapi",
       "frontend_tests_purchaseorderlistpage_test_routerstubs"
@@ -45,6 +60,26 @@
       "backend_tests_services_purchase_order_service_test_validpayload"
     ],
     "2": [
+      "frontend_src_app",
+      "frontend_src_app_isdashboard",
+      "frontend_src_app_isgoodsreceipts",
+      "frontend_src_app_ispurchaseorders",
+      "frontend_src_app_isrequisitions",
+      "frontend_src_app_route",
+      "frontend_src_pages_goodsreceiptcreatepage",
+      "frontend_src_pages_goodsreceiptcreatepage_errormessage",
+      "frontend_src_pages_goodsreceiptcreatepage_form",
+      "frontend_src_pages_goodsreceiptcreatepage_isloading",
+      "frontend_src_pages_goodsreceiptcreatepage_issaving",
+      "frontend_src_pages_goodsreceiptcreatepage_lines",
+      "frontend_src_pages_goodsreceiptcreatepage_load",
+      "frontend_src_pages_goodsreceiptcreatepage_purchaseorder",
+      "frontend_src_pages_goodsreceiptcreatepage_route",
+      "frontend_src_pages_goodsreceiptcreatepage_router",
+      "frontend_src_pages_goodsreceiptcreatepage_save",
+      "frontend_src_pages_goodsreceiptcreatepage_selectedlines"
+    ],
+    "3": [
       "frontend_src_components_purchaseorderheaderform",
       "frontend_src_components_purchaseorderheaderform_emit",
       "frontend_src_components_purchaseorderheaderform_props",
@@ -64,25 +99,24 @@
       "frontend_src_pages_purchaseordercreatepage_selectedlines",
       "frontend_src_pages_purchaseordercreatepage_totalvalue"
     ],
-    "3": [
-      "frontend_src_app",
-      "frontend_src_app_isdashboard",
-      "frontend_src_app_ispurchaseorders",
-      "frontend_src_app_isrequisitions",
-      "frontend_src_app_route",
-      "frontend_src_main",
-      "frontend_src_pages_requisitiondetailpage",
-      "frontend_src_pages_requisitiondetailpage_approverequisition",
-      "frontend_src_pages_requisitiondetailpage_errormessage",
-      "frontend_src_pages_requisitiondetailpage_load",
-      "frontend_src_pages_requisitiondetailpage_requisition",
-      "frontend_src_pages_requisitiondetailpage_route",
-      "frontend_src_pages_requisitiondetailpage_submitrequisition",
-      "frontend_src_router_index",
-      "frontend_src_router_index_router",
-      "frontend_src_router_index_routes"
-    ],
     "4": [
+      "backend_src_routes_goods_receipt_routes",
+      "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "backend_src_services_goods_receipt_service",
+      "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "backend_src_services_goods_receipt_service_creategrnumber",
+      "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "backend_src_services_goods_receipt_service_listgoodsreceipts",
+      "backend_src_services_goods_receipt_service_mapheader",
+      "backend_src_services_goods_receipt_service_mapline",
+      "backend_src_services_goods_receipt_service_postgoodsreceipt",
+      "backend_src_services_goods_receipt_service_validatecreatepayload",
+      "backend_src_services_goods_receipt_service_validationerror",
+      "backend_tests_services_goods_receipt_service_test",
+      "backend_tests_services_goods_receipt_service_test_mockdb",
+      "backend_tests_services_goods_receipt_service_test_payload"
+    ],
+    "5": [
       "backend_src_routes_requisition_routes",
       "backend_src_routes_requisition_routes_requisitionroutes",
       "backend_src_services_requisition_service",
@@ -99,7 +133,22 @@
       "backend_tests_services_requisition_service_test",
       "backend_tests_services_requisition_service_test_mockdb"
     ],
-    "5": [
+    "6": [
+      "frontend_src_pages_purchaseorderdetailpage",
+      "frontend_src_pages_purchaseorderdetailpage_canreceive",
+      "frontend_src_pages_purchaseorderdetailpage_errormessage",
+      "frontend_src_pages_purchaseorderdetailpage_formatprice",
+      "frontend_src_pages_purchaseorderdetailpage_isloading",
+      "frontend_src_pages_purchaseorderdetailpage_issubmitting",
+      "frontend_src_pages_purchaseorderdetailpage_load",
+      "frontend_src_pages_purchaseorderdetailpage_purchaseorder",
+      "frontend_src_pages_purchaseorderdetailpage_route",
+      "frontend_src_pages_purchaseorderdetailpage_submitpurchaseorder",
+      "frontend_tests_purchaseorderdetailpage_test",
+      "frontend_tests_purchaseorderdetailpage_test_api_mockapi",
+      "frontend_tests_purchaseorderdetailpage_test_purchaseorder"
+    ],
+    "7": [
       "backend_src_app",
       "backend_src_app_buildapp",
       "backend_src_config",
@@ -110,18 +159,7 @@
       "backend_src_server_start",
       "backend_tests_app_test"
     ],
-    "6": [
-      "frontend_src_pages_purchaseorderdetailpage",
-      "frontend_src_pages_purchaseorderdetailpage_errormessage",
-      "frontend_src_pages_purchaseorderdetailpage_formatprice",
-      "frontend_src_pages_purchaseorderdetailpage_isloading",
-      "frontend_src_pages_purchaseorderdetailpage_issubmitting",
-      "frontend_src_pages_purchaseorderdetailpage_load",
-      "frontend_src_pages_purchaseorderdetailpage_purchaseorder",
-      "frontend_src_pages_purchaseorderdetailpage_route",
-      "frontend_src_pages_purchaseorderdetailpage_submitpurchaseorder"
-    ],
-    "7": [
+    "8": [
       "frontend_src_pages_requisitioncreatepage",
       "frontend_src_pages_requisitioncreatepage_addline",
       "frontend_src_pages_requisitioncreatepage_emptyline",
@@ -131,7 +169,16 @@
       "frontend_src_pages_requisitioncreatepage_removeline",
       "frontend_src_pages_requisitioncreatepage_router"
     ],
-    "8": [
+    "9": [
+      "frontend_src_pages_requisitiondetailpage",
+      "frontend_src_pages_requisitiondetailpage_approverequisition",
+      "frontend_src_pages_requisitiondetailpage_errormessage",
+      "frontend_src_pages_requisitiondetailpage_load",
+      "frontend_src_pages_requisitiondetailpage_requisition",
+      "frontend_src_pages_requisitiondetailpage_route",
+      "frontend_src_pages_requisitiondetailpage_submitrequisition"
+    ],
+    "10": [
       "frontend_src_components_purchaseorderlineallocationtable",
       "frontend_src_components_purchaseorderlineallocationtable_emit",
       "frontend_src_components_purchaseorderlineallocationtable_formatprice",
@@ -139,54 +186,67 @@
       "frontend_src_components_purchaseorderlineallocationtable_selectedcount",
       "frontend_src_components_purchaseorderlineallocationtable_updateline"
     ],
-    "9": [
+    "11": [
+      "tests_e2e_po_module_spec",
+      "tests_e2e_po_module_spec_opencreatepurchaseorderpage",
+      "tests_e2e_po_module_spec_test_expect"
+    ],
+    "12": [
       "docker_postgres_init_00_init_mvp_db",
       "docker_postgres_init_00_init_mvp_db_sh__entry"
     ],
-    "10": [
+    "13": [
       "githooks_pre_push",
       "githooks_pre_push__entry"
     ],
-    "11": [
+    "14": [
       "playwright_config",
       "playwright_config_defineconfig"
     ],
-    "12": [
+    "15": [
+      "tests_e2e_gr_module_spec",
+      "tests_e2e_gr_module_spec_test_expect"
+    ],
+    "16": [
       "backend_jest_config"
     ],
-    "13": [
+    "17": [
       "frontend_babel_config"
     ],
-    "14": [
+    "18": [
       "frontend_jest_config"
     ],
-    "15": [
+    "19": [
       "frontend_vite_config"
     ]
   },
   "cohesion": {
-    "0": 0.12121212121212122,
+    "0": 0.07357357357357357,
     "1": 0.2549019607843137,
-    "2": 0.13071895424836602,
-    "3": 0.13333333333333333,
-    "4": 0.3523809523809524,
-    "5": 0.4166666666666667,
-    "6": 0.2222222222222222,
-    "7": 0.2857142857142857,
-    "8": 0.4,
-    "9": 1.0,
-    "10": 1.0,
-    "11": 1.0,
+    "2": 0.10457516339869281,
+    "3": 0.13071895424836602,
+    "4": 0.3142857142857143,
+    "5": 0.3523809523809524,
+    "6": 0.15384615384615385,
+    "7": 0.4166666666666667,
+    "8": 0.2857142857142857,
+    "9": 0.2857142857142857,
+    "10": 0.4,
+    "11": 0.6666666666666666,
     "12": 1.0,
     "13": 1.0,
     "14": 1.0,
-    "15": 1.0
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0
   },
   "gods": [
     {
       "id": "frontend_src_api_api",
       "label": "api",
-      "degree": 11
+      "degree": 14
     },
     {
       "id": "backend_src_routes_requisition_routes_requisitionroutes",
@@ -196,6 +256,16 @@
     {
       "id": "backend_src_services_requisition_service_getrequisitionbyid",
       "label": "getRequisitionById()",
+      "degree": 8
+    },
+    {
+      "id": "backend_src_app_buildapp",
+      "label": "buildApp()",
+      "degree": 8
+    },
+    {
+      "id": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "label": "createGoodsReceipt()",
       "degree": 8
     },
     {
@@ -214,24 +284,14 @@
       "degree": 7
     },
     {
-      "id": "backend_src_app_buildapp",
-      "label": "buildApp()",
+      "id": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "label": "goodsReceiptRoutes()",
       "degree": 7
     },
     {
-      "id": "backend_src_services_requisition_service_createrequisition",
-      "label": "createRequisition()",
-      "degree": 6
-    },
-    {
-      "id": "backend_src_services_purchase_order_service_getopenpolines",
-      "label": "getOpenPoLines()",
-      "degree": 5
-    },
-    {
-      "id": "backend_src_services_purchase_order_service_listpurchaseorders",
-      "label": "listPurchaseOrders()",
-      "degree": 5
+      "id": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "label": "getGoodsReceiptById()",
+      "degree": 7
     }
   ],
   "surprises": [
@@ -269,6 +329,17 @@
       "why": "inferred connection - not explicitly stated in source; peripheral node `dbPlugin()` unexpectedly reaches hub `buildApp()`"
     },
     {
+      "source": "buildApp()",
+      "target": "goodsReceiptRoutes()",
+      "source_files": [
+        "backend/src/app.js",
+        "backend/src/routes/goods-receipt-routes.js"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
       "source": "start()",
       "target": "buildApp()",
       "source_files": [
@@ -278,17 +349,6 @@
       "confidence": "EXTRACTED",
       "relation": "calls",
       "why": "peripheral node `start()` unexpectedly reaches hub `buildApp()`"
-    },
-    {
-      "source": "purchaseOrderRoutes()",
-      "target": "createPurchaseOrder()",
-      "source_files": [
-        "backend/src/routes/purchase-order-routes.js",
-        "backend/src/services/purchase-order-service.js"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "calls",
-      "why": "cross-file semantic connection"
     }
   ],
   "tokens": {

@@ -4,6 +4,30 @@
   "graph": {},
   "nodes": [
     {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
+      "source_location": "L50",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "formatdate()",
+      "community_name": "api.js",
+      "id": "frontend_src_pages_purchaseorderlistpage_formatdate"
+    },
+    {
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
+      "source_location": "L61",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "load()",
+      "community_name": "api.js",
+      "id": "frontend_src_pages_purchaseorderlistpage_load"
+    },
+    {
       "label": "apiFetch()",
       "file_type": "code",
       "source_file": "frontend/src/api.js",
@@ -15,24 +39,46 @@
       "norm_label": "apifetch()"
     },
     {
-      "label": "formatDate()",
+      "label": "load()",
       "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
-      "source_location": "L50",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L23",
       "_callable": true,
       "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderlistpage_formatdate",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_load",
+      "community": 0,
+      "norm_label": "load()"
+    },
+    {
+      "label": "post()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_post",
+      "community": 0,
+      "norm_label": "post()"
+    },
+    {
+      "label": "formatDate()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptlistpage_formatdate",
       "community": 0,
       "norm_label": "formatdate()"
     },
     {
       "label": "load()",
       "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
-      "source_location": "L61",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L42",
       "_callable": true,
       "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderlistpage_load",
+      "id": "frontend_src_pages_goodsreceiptlistpage_load",
       "community": 0,
       "norm_label": "load()"
     },
@@ -163,9 +209,10 @@
       "source_location": "L87",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_tests_services_purchase_order_service_test_detailqueryresponses",
       "community": 1,
-      "norm_label": "detailqueryresponses()"
+      "norm_label": "detailqueryresponses()",
+      "community_name": "purchase-order-service.js",
+      "id": "backend_tests_services_purchase_order_service_test_detailqueryresponses"
     },
     {
       "label": "happyPathClientResponses()",
@@ -174,9 +221,10 @@
       "source_location": "L60",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_tests_services_purchase_order_service_test_happypathclientresponses",
       "community": 1,
-      "norm_label": "happypathclientresponses()"
+      "norm_label": "happypathclientresponses()",
+      "community_name": "purchase-order-service.js",
+      "id": "backend_tests_services_purchase_order_service_test_happypathclientresponses"
     },
     {
       "label": "mockClient()",
@@ -185,9 +233,10 @@
       "source_location": "L37",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_tests_services_purchase_order_service_test_mockclient",
       "community": 1,
-      "norm_label": "mockclient()"
+      "norm_label": "mockclient()",
+      "community_name": "purchase-order-service.js",
+      "id": "backend_tests_services_purchase_order_service_test_mockclient"
     },
     {
       "label": "mockDb()",
@@ -196,9 +245,10 @@
       "source_location": "L47",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_tests_services_purchase_order_service_test_mockdb",
       "community": 1,
-      "norm_label": "mockdb()"
+      "norm_label": "mockdb()",
+      "community_name": "purchase-order-service.js",
+      "id": "backend_tests_services_purchase_order_service_test_mockdb"
     },
     {
       "label": "validPayload()",
@@ -207,9 +257,65 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_tests_services_purchase_order_service_test_validpayload",
       "community": 1,
-      "norm_label": "validpayload()"
+      "norm_label": "validpayload()",
+      "community_name": "purchase-order-service.js",
+      "id": "backend_tests_services_purchase_order_service_test_validpayload"
+    },
+    {
+      "label": "formatPrice()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/PurchaseOrderLineAllocationTable.vue",
+      "source_location": "L68",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "frontend_src_components_purchaseorderlineallocationtable_formatprice",
+      "community": 10,
+      "norm_label": "formatprice()"
+    },
+    {
+      "label": "updateLine()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/PurchaseOrderLineAllocationTable.vue",
+      "source_location": "L62",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "frontend_src_components_purchaseorderlineallocationtable_updateline",
+      "community": 10,
+      "norm_label": "updateline()"
+    },
+    {
+      "label": "openCreatePurchaseOrderPage()",
+      "file_type": "code",
+      "source_file": "tests/e2e/po-module.spec.js",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_e2e_po_module_spec_opencreatepurchaseorderpage",
+      "community": 11,
+      "norm_label": "opencreatepurchaseorderpage()"
+    },
+    {
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_load",
+      "community": 2,
+      "norm_label": "load()"
+    },
+    {
+      "label": "save()",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L56",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_save",
+      "community": 2,
+      "norm_label": "save()"
     },
     {
       "label": "updateField()",
@@ -218,9 +324,10 @@
       "source_location": "L48",
       "_callable": true,
       "_origin": "ast",
-      "id": "frontend_src_components_purchaseorderheaderform_updatefield",
-      "community": 2,
-      "norm_label": "updatefield()"
+      "community": 3,
+      "norm_label": "updatefield()",
+      "community_name": "PurchaseOrderCreatePage.vue",
+      "id": "frontend_src_components_purchaseorderheaderform_updatefield"
     },
     {
       "label": "buildPayload()",
@@ -230,7 +337,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseordercreatepage_buildpayload",
-      "community": 2,
+      "community": 3,
       "norm_label": "buildpayload()"
     },
     {
@@ -241,7 +348,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseordercreatepage_formatprice",
-      "community": 2,
+      "community": 3,
       "norm_label": "formatprice()"
     },
     {
@@ -252,7 +359,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseordercreatepage_loadopenlines",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadopenlines()"
     },
     {
@@ -263,7 +370,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseordercreatepage_mapopenline",
-      "community": 2,
+      "community": 3,
       "norm_label": "mapopenline()"
     },
     {
@@ -274,44 +381,140 @@
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseordercreatepage_savepurchaseorder",
-      "community": 2,
+      "community": 3,
       "norm_label": "savepurchaseorder()"
     },
     {
-      "label": "approveRequisition()",
+      "label": "goodsReceiptRoutes()",
       "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
-      "source_location": "L114",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L8",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "approverequisition()",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage_approverequisition"
+      "id": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "community": 4,
+      "norm_label": "goodsreceiptroutes()"
     },
     {
-      "label": "load()",
+      "label": "createGoodsReceipt()",
       "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L105",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "community": 4,
+      "norm_label": "creategoodsreceipt()"
+    },
+    {
+      "label": "createGrNumber()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_creategrnumber",
+      "community": 4,
+      "norm_label": "creategrnumber()"
+    },
+    {
+      "label": "getGoodsReceiptById()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
       "source_location": "L97",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "load()",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage_load"
+      "id": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "community": 4,
+      "norm_label": "getgoodsreceiptbyid()"
     },
     {
-      "label": "submitRequisition()",
+      "label": "listGoodsReceipts()",
       "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
-      "source_location": "L106",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L85",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "norm_label": "submitrequisition()",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage_submitrequisition"
+      "id": "backend_src_services_goods_receipt_service_listgoodsreceipts",
+      "community": 4,
+      "norm_label": "listgoodsreceipts()"
+    },
+    {
+      "label": "mapHeader()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_mapheader",
+      "community": 4,
+      "norm_label": "mapheader()"
+    },
+    {
+      "label": "mapLine()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_mapline",
+      "community": 4,
+      "norm_label": "mapline()"
+    },
+    {
+      "label": "postGoodsReceipt()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L171",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_postgoodsreceipt",
+      "community": 4,
+      "norm_label": "postgoodsreceipt()"
+    },
+    {
+      "label": "validateCreatePayload()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_validatecreatepayload",
+      "community": 4,
+      "norm_label": "validatecreatepayload()"
+    },
+    {
+      "label": "validationError()",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service_validationerror",
+      "community": 4,
+      "norm_label": "validationerror()"
+    },
+    {
+      "label": "mockDb()",
+      "file_type": "code",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_tests_services_goods_receipt_service_test_mockdb",
+      "community": 4,
+      "norm_label": "mockdb()"
+    },
+    {
+      "label": "payload()",
+      "file_type": "code",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_tests_services_goods_receipt_service_test_payload",
+      "community": 4,
+      "norm_label": "payload()"
     },
     {
       "label": "requisitionRoutes()",
@@ -320,7 +523,7 @@
       "source_location": "L10",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "requisitionroutes()",
       "community_name": "requisition-service.js",
       "id": "backend_src_routes_requisition_routes_requisitionroutes"
@@ -332,7 +535,7 @@
       "source_location": "L225",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "approverequisition()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_approverequisition"
@@ -344,7 +547,7 @@
       "source_location": "L36",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "createprnumber()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_createprnumber"
@@ -356,7 +559,7 @@
       "source_location": "L134",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "createrequisition()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_createrequisition"
@@ -368,7 +571,7 @@
       "source_location": "L51",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "getrequisitionbyid()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_getrequisitionbyid"
@@ -380,7 +583,7 @@
       "source_location": "L72",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "getrequisitionopenlines()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_getrequisitionopenlines"
@@ -392,7 +595,7 @@
       "source_location": "L41",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "listrequisitions()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_listrequisitions"
@@ -404,7 +607,7 @@
       "source_location": "L3",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "mapheader()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_mapheader"
@@ -416,7 +619,7 @@
       "source_location": "L18",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "mapline()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_mapline"
@@ -428,7 +631,7 @@
       "source_location": "L198",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "submitrequisition()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_submitrequisition"
@@ -440,7 +643,7 @@
       "source_location": "L101",
       "_callable": true,
       "_origin": "ast",
-      "community": 4,
+      "community": 5,
       "norm_label": "validatecreatepayload()",
       "community_name": "requisition-service.js",
       "id": "backend_src_services_requisition_service_validatecreatepayload"
@@ -452,50 +655,16 @@
       "source_location": "L7",
       "_callable": true,
       "_origin": "ast",
-      "id": "backend_tests_services_requisition_service_test_mockdb",
-      "community": 4,
-      "norm_label": "mockdb()"
-    },
-    {
-      "label": "dbPlugin()",
-      "file_type": "code",
-      "source_file": "backend/src/plugins/db.js",
-      "source_location": "L7",
-      "_callable": true,
-      "_origin": "ast",
       "community": 5,
-      "norm_label": "dbplugin()",
-      "community_name": "app.js",
-      "id": "backend_src_plugins_db_dbplugin"
-    },
-    {
-      "label": "start()",
-      "file_type": "code",
-      "source_file": "backend/src/server.js",
-      "source_location": "L4",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "start()",
-      "community_name": "app.js",
-      "id": "backend_src_server_start"
-    },
-    {
-      "label": "buildApp()",
-      "file_type": "code",
-      "source_file": "backend/src/app.js",
-      "source_location": "L9",
-      "_callable": true,
-      "_origin": "ast",
-      "id": "backend_src_app_buildapp",
-      "community": 5,
-      "norm_label": "buildapp()"
+      "norm_label": "mockdb()",
+      "community_name": "requisition-service.js",
+      "id": "backend_tests_services_requisition_service_test_mockdb"
     },
     {
       "label": "formatPrice()",
       "file_type": "code",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L100",
+      "source_location": "L102",
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseorderdetailpage_formatprice",
@@ -506,7 +675,7 @@
       "label": "load()",
       "file_type": "code",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L104",
+      "source_location": "L106",
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseorderdetailpage_load",
@@ -517,12 +686,47 @@
       "label": "submitPurchaseOrder()",
       "file_type": "code",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L116",
+      "source_location": "L118",
       "_callable": true,
       "_origin": "ast",
       "id": "frontend_src_pages_purchaseorderdetailpage_submitpurchaseorder",
       "community": 6,
       "norm_label": "submitpurchaseorder()"
+    },
+    {
+      "label": "dbPlugin()",
+      "file_type": "code",
+      "source_file": "backend/src/plugins/db.js",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "dbplugin()",
+      "community_name": "buildApp",
+      "id": "backend_src_plugins_db_dbplugin"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "backend/src/server.js",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "start()",
+      "community_name": "buildApp",
+      "id": "backend_src_server_start"
+    },
+    {
+      "label": "buildApp()",
+      "file_type": "code",
+      "source_file": "backend/src/app.js",
+      "source_location": "L10",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "backend_src_app_buildapp",
+      "community": 7,
+      "norm_label": "buildapp()"
     },
     {
       "label": "addLine()",
@@ -531,7 +735,7 @@
       "source_location": "L123",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "addline()",
       "community_name": "RequisitionCreatePage.vue",
       "id": "frontend_src_pages_requisitioncreatepage_addline"
@@ -543,7 +747,7 @@
       "source_location": "L101",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "emptyline()",
       "community_name": "RequisitionCreatePage.vue",
       "id": "frontend_src_pages_requisitioncreatepage_emptyline"
@@ -555,7 +759,7 @@
       "source_location": "L132",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "handlesubmit()",
       "community_name": "RequisitionCreatePage.vue",
       "id": "frontend_src_pages_requisitioncreatepage_handlesubmit"
@@ -567,54 +771,90 @@
       "source_location": "L127",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "removeline()",
       "community_name": "RequisitionCreatePage.vue",
       "id": "frontend_src_pages_requisitioncreatepage_removeline"
     },
     {
-      "label": "formatPrice()",
+      "label": "approveRequisition()",
       "file_type": "code",
-      "source_file": "frontend/src/components/PurchaseOrderLineAllocationTable.vue",
-      "source_location": "L68",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L114",
       "_callable": true,
       "_origin": "ast",
-      "id": "frontend_src_components_purchaseorderlineallocationtable_formatprice",
-      "community": 8,
-      "norm_label": "formatprice()"
+      "community": 9,
+      "norm_label": "approverequisition()",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage_approverequisition"
     },
     {
-      "label": "updateLine()",
+      "label": "load()",
       "file_type": "code",
-      "source_file": "frontend/src/components/PurchaseOrderLineAllocationTable.vue",
-      "source_location": "L62",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L97",
       "_callable": true,
       "_origin": "ast",
-      "id": "frontend_src_components_purchaseorderlineallocationtable_updateline",
-      "community": 8,
-      "norm_label": "updateline()"
+      "community": 9,
+      "norm_label": "load()",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage_load"
     },
     {
-      "label": "DashboardPage.vue",
+      "label": "submitRequisition()",
       "file_type": "code",
-      "source_file": "frontend/src/pages/DashboardPage.vue",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L106",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "submitrequisition()",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage_submitrequisition"
+    },
+    {
+      "label": "PurchaseOrderListPage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
       "source_location": "L1",
       "_origin": "ast",
       "community": 0,
-      "norm_label": "dashboardpage.vue",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_dashboardpage"
+      "norm_label": "purchaseorderlistpage.vue",
+      "community_name": "api.js",
+      "id": "frontend_src_pages_purchaseorderlistpage"
     },
     {
-      "label": "stats",
+      "label": "errorMessage",
       "file_type": "code",
-      "source_file": "frontend/src/pages/DashboardPage.vue",
-      "source_location": "L69",
+      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
+      "source_location": "L48",
       "_origin": "ast",
       "community": 0,
-      "norm_label": "stats",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_dashboardpage_stats"
+      "norm_label": "errormessage",
+      "community_name": "api.js",
+      "id": "frontend_src_pages_purchaseorderlistpage_errormessage"
+    },
+    {
+      "label": "isLoading",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
+      "source_location": "L47",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "isloading",
+      "community_name": "api.js",
+      "id": "frontend_src_pages_purchaseorderlistpage_isloading"
+    },
+    {
+      "label": "items",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "items",
+      "community_name": "api.js",
+      "id": "frontend_src_pages_purchaseorderlistpage_items"
     },
     {
       "label": "RequisitionListPage.vue",
@@ -624,7 +864,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "requisitionlistpage.vue",
-      "community_name": "RequisitionCreatePage.vue",
+      "community_name": "api.js",
       "id": "frontend_src_pages_requisitionlistpage"
     },
     {
@@ -635,7 +875,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "errormessage",
-      "community_name": "RequisitionCreatePage.vue",
+      "community_name": "api.js",
       "id": "frontend_src_pages_requisitionlistpage_errormessage"
     },
     {
@@ -646,8 +886,74 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "items",
-      "community_name": "RequisitionCreatePage.vue",
+      "community_name": "api.js",
       "id": "frontend_src_pages_requisitionlistpage_items"
+    },
+    {
+      "label": "PurchaseOrderCreatePage.test.js",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderCreatePage.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "purchaseordercreatepage.test.js",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseordercreatepage_test"
+    },
+    {
+      "label": "{ api: mockApi }",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderCreatePage.test.js",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "{ api: mockapi }",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseordercreatepage_test_api_mockapi"
+    },
+    {
+      "label": "PurchaseOrderListPage.test.js",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderListPage.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "purchaseorderlistpage.test.js",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseorderlistpage_test"
+    },
+    {
+      "label": "{ api: mockApi }",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderListPage.test.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "{ api: mockapi }",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseorderlistpage_test_api_mockapi"
+    },
+    {
+      "label": "routerStubs",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderListPage.test.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "routerstubs",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseorderlistpage_test_routerstubs"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "frontend/src/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "main.js",
+      "community_name": "index.js",
+      "id": "frontend_src_main"
     },
     {
       "label": "api.js",
@@ -670,124 +976,154 @@
       "norm_label": "api"
     },
     {
-      "label": "PurchaseOrderListPage.vue",
+      "label": "DashboardPage.vue",
       "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
+      "source_file": "frontend/src/pages/DashboardPage.vue",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderlistpage",
+      "id": "frontend_src_pages_dashboardpage",
       "community": 0,
-      "norm_label": "purchaseorderlistpage.vue"
+      "norm_label": "dashboardpage.vue"
+    },
+    {
+      "label": "stats",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/DashboardPage.vue",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "frontend_src_pages_dashboardpage_stats",
+      "community": 0,
+      "norm_label": "stats"
+    },
+    {
+      "label": "GoodsReceiptDetailPage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptdetailpage",
+      "community": 0,
+      "norm_label": "goodsreceiptdetailpage.vue"
     },
     {
       "label": "errorMessage",
       "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
-      "source_location": "L48",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderlistpage_errormessage",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_errormessage",
       "community": 0,
       "norm_label": "errormessage"
     },
     {
       "label": "isLoading",
       "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
-      "source_location": "L47",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderlistpage_isloading",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_isloading",
+      "community": 0,
+      "norm_label": "isloading"
+    },
+    {
+      "label": "isPosting",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_isposting",
+      "community": 0,
+      "norm_label": "isposting"
+    },
+    {
+      "label": "receipt",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_receipt",
+      "community": 0,
+      "norm_label": "receipt"
+    },
+    {
+      "label": "route",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptdetailpage_route",
+      "community": 0,
+      "norm_label": "route"
+    },
+    {
+      "label": "GoodsReceiptListPage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptlistpage",
+      "community": 0,
+      "norm_label": "goodsreceiptlistpage.vue"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptlistpage_errormessage",
+      "community": 0,
+      "norm_label": "errormessage"
+    },
+    {
+      "label": "isLoading",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptlistpage_isloading",
       "community": 0,
       "norm_label": "isloading"
     },
     {
       "label": "items",
       "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderListPage.vue",
-      "source_location": "L46",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L33",
       "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderlistpage_items",
+      "id": "frontend_src_pages_goodsreceiptlistpage_items",
       "community": 0,
       "norm_label": "items"
     },
     {
-      "label": "PurchaseOrderCreatePage.test.js",
+      "label": "index.js",
       "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderCreatePage.test.js",
+      "source_file": "frontend/src/router/index.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "frontend_tests_purchaseordercreatepage_test",
+      "id": "frontend_src_router_index",
       "community": 0,
-      "norm_label": "purchaseordercreatepage.test.js"
+      "norm_label": "index.js"
     },
     {
-      "label": "{ api: mockApi }",
+      "label": "router",
       "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderCreatePage.test.js",
-      "source_location": "L15",
+      "source_file": "frontend/src/router/index.js",
+      "source_location": "L26",
       "_origin": "ast",
-      "id": "frontend_tests_purchaseordercreatepage_test_api_mockapi",
+      "id": "frontend_src_router_index_router",
       "community": 0,
-      "norm_label": "{ api: mockapi }"
+      "norm_label": "router"
     },
     {
-      "label": "PurchaseOrderDetailPage.test.js",
+      "label": "routes",
       "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderDetailPage.test.js",
-      "source_location": "L1",
+      "source_file": "frontend/src/router/index.js",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "frontend_tests_purchaseorderdetailpage_test",
+      "id": "frontend_src_router_index_routes",
       "community": 0,
-      "norm_label": "purchaseorderdetailpage.test.js"
-    },
-    {
-      "label": "{ api: mockApi }",
-      "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderDetailPage.test.js",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "frontend_tests_purchaseorderdetailpage_test_api_mockapi",
-      "community": 0,
-      "norm_label": "{ api: mockapi }"
-    },
-    {
-      "label": "purchaseOrder",
-      "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderDetailPage.test.js",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "frontend_tests_purchaseorderdetailpage_test_purchaseorder",
-      "community": 0,
-      "norm_label": "purchaseorder"
-    },
-    {
-      "label": "PurchaseOrderListPage.test.js",
-      "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderListPage.test.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_tests_purchaseorderlistpage_test",
-      "community": 0,
-      "norm_label": "purchaseorderlistpage.test.js"
-    },
-    {
-      "label": "{ api: mockApi }",
-      "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderListPage.test.js",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "frontend_tests_purchaseorderlistpage_test_api_mockapi",
-      "community": 0,
-      "norm_label": "{ api: mockapi }"
-    },
-    {
-      "label": "routerStubs",
-      "file_type": "code",
-      "source_file": "frontend/tests/PurchaseOrderListPage.test.js",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "frontend_tests_purchaseorderlistpage_test_routerstubs",
-      "community": 0,
-      "norm_label": "routerstubs"
+      "norm_label": "routes"
     },
     {
       "label": "purchase-order-routes.js",
@@ -817,556 +1153,10 @@
       "source_file": "backend/tests/services/purchase-order-service.test.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "backend_tests_services_purchase_order_service_test",
       "community": 1,
-      "norm_label": "purchase-order-service.test.js"
-    },
-    {
-      "label": "pre-push",
-      "file_type": "code",
-      "source_file": ".githooks/pre-push",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "file"
-      },
-      "_origin": "ast",
-      "id": "githooks_pre_push",
-      "community": 10,
-      "norm_label": "pre-push"
-    },
-    {
-      "label": "pre-push script",
-      "file_type": "code",
-      "source_file": ".githooks/pre-push",
-      "source_location": "L1",
-      "metadata": {
-        "language": "bash",
-        "kind": "bash_entrypoint"
-      },
-      "_origin": "ast",
-      "id": "githooks_pre_push__entry",
-      "community": 10,
-      "norm_label": "pre-push script"
-    },
-    {
-      "label": "playwright.config.js",
-      "file_type": "code",
-      "source_file": "playwright.config.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "playwright.config.js",
-      "community_name": "playwright.config.js",
-      "id": "playwright_config"
-    },
-    {
-      "label": "{ defineConfig }",
-      "file_type": "code",
-      "source_file": "playwright.config.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 11,
-      "norm_label": "{ defineconfig }",
-      "community_name": "playwright.config.js",
-      "id": "playwright_config_defineconfig"
-    },
-    {
-      "label": "jest.config.js",
-      "file_type": "code",
-      "source_file": "backend/jest.config.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "norm_label": "jest.config.js",
-      "community_name": "jest.config.js",
-      "id": "backend_jest_config"
-    },
-    {
-      "label": "babel.config.cjs",
-      "file_type": "code",
-      "source_file": "frontend/babel.config.cjs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_babel_config",
-      "community": 13,
-      "norm_label": "babel.config.cjs"
-    },
-    {
-      "label": "jest.config.cjs",
-      "file_type": "code",
-      "source_file": "frontend/jest.config.cjs",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_jest_config",
-      "community": 14,
-      "norm_label": "jest.config.cjs"
-    },
-    {
-      "label": "vite.config.js",
-      "file_type": "code",
-      "source_file": "frontend/vite.config.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 15,
-      "norm_label": "vite.config.js",
-      "community_name": "vite.config.js",
-      "id": "frontend_vite_config"
-    },
-    {
-      "label": "PurchaseOrderHeaderForm.vue",
-      "file_type": "code",
-      "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_src_components_purchaseorderheaderform",
-      "community": 2,
-      "norm_label": "purchaseorderheaderform.vue"
-    },
-    {
-      "label": "emit",
-      "file_type": "code",
-      "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
-      "source_location": "L46",
-      "_origin": "ast",
-      "id": "frontend_src_components_purchaseorderheaderform_emit",
-      "community": 2,
-      "norm_label": "emit"
-    },
-    {
-      "label": "props",
-      "file_type": "code",
-      "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
-      "source_location": "L39",
-      "_origin": "ast",
-      "id": "frontend_src_components_purchaseorderheaderform_props",
-      "community": 2,
-      "norm_label": "props"
-    },
-    {
-      "label": "PurchaseOrderCreatePage.vue",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage",
-      "community": 2,
-      "norm_label": "purchaseordercreatepage.vue"
-    },
-    {
-      "label": "errorMessage",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_errormessage",
-      "community": 2,
-      "norm_label": "errormessage"
-    },
-    {
-      "label": "form",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_form",
-      "community": 2,
-      "norm_label": "form"
-    },
-    {
-      "label": "isLoading",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_isloading",
-      "community": 2,
-      "norm_label": "isloading"
-    },
-    {
-      "label": "isSaving",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L18",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_issaving",
-      "community": 2,
-      "norm_label": "issaving"
-    },
-    {
-      "label": "lines",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_lines",
-      "community": 2,
-      "norm_label": "lines"
-    },
-    {
-      "label": "savedMessage",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_savedmessage",
-      "community": 2,
-      "norm_label": "savedmessage"
-    },
-    {
-      "label": "selectedLines",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_selectedlines",
-      "community": 2,
-      "norm_label": "selectedlines"
-    },
-    {
-      "label": "totalValue",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseordercreatepage_totalvalue",
-      "community": 2,
-      "norm_label": "totalvalue"
-    },
-    {
-      "label": "main.js",
-      "file_type": "code",
-      "source_file": "frontend/src/main.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "main.js",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_main"
-    },
-    {
-      "label": "RequisitionDetailPage.vue",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "requisitiondetailpage.vue",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage"
-    },
-    {
-      "label": "errorMessage",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
-      "source_location": "L95",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "errormessage",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage_errormessage"
-    },
-    {
-      "label": "requisition",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
-      "source_location": "L94",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "requisition",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage_requisition"
-    },
-    {
-      "label": "route",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
-      "source_location": "L93",
-      "_origin": "ast",
-      "community": 3,
-      "norm_label": "route",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitiondetailpage_route"
-    },
-    {
-      "label": "App.vue",
-      "file_type": "code",
-      "source_file": "frontend/src/App.vue",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_src_app",
-      "community": 3,
-      "norm_label": "app.vue"
-    },
-    {
-      "label": "isDashboard",
-      "file_type": "code",
-      "source_file": "frontend/src/App.vue",
-      "source_location": "L23",
-      "_origin": "ast",
-      "id": "frontend_src_app_isdashboard",
-      "community": 3,
-      "norm_label": "isdashboard"
-    },
-    {
-      "label": "isPurchaseOrders",
-      "file_type": "code",
-      "source_file": "frontend/src/App.vue",
-      "source_location": "L25",
-      "_origin": "ast",
-      "id": "frontend_src_app_ispurchaseorders",
-      "community": 3,
-      "norm_label": "ispurchaseorders"
-    },
-    {
-      "label": "isRequisitions",
-      "file_type": "code",
-      "source_file": "frontend/src/App.vue",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "frontend_src_app_isrequisitions",
-      "community": 3,
-      "norm_label": "isrequisitions"
-    },
-    {
-      "label": "route",
-      "file_type": "code",
-      "source_file": "frontend/src/App.vue",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "frontend_src_app_route",
-      "community": 3,
-      "norm_label": "route"
-    },
-    {
-      "label": "index.js",
-      "file_type": "code",
-      "source_file": "frontend/src/router/index.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_src_router_index",
-      "community": 3,
-      "norm_label": "index.js"
-    },
-    {
-      "label": "router",
-      "file_type": "code",
-      "source_file": "frontend/src/router/index.js",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "frontend_src_router_index_router",
-      "community": 3,
-      "norm_label": "router"
-    },
-    {
-      "label": "routes",
-      "file_type": "code",
-      "source_file": "frontend/src/router/index.js",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "frontend_src_router_index_routes",
-      "community": 3,
-      "norm_label": "routes"
-    },
-    {
-      "label": "requisition-routes.js",
-      "file_type": "code",
-      "source_file": "backend/src/routes/requisition-routes.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "requisition-routes.js",
-      "community_name": "requisition-service.js",
-      "id": "backend_src_routes_requisition_routes"
-    },
-    {
-      "label": "requisition-service.js",
-      "file_type": "code",
-      "source_file": "backend/src/services/requisition-service.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "norm_label": "requisition-service.js",
-      "community_name": "requisition-service.js",
-      "id": "backend_src_services_requisition_service"
-    },
-    {
-      "label": "requisition-service.test.js",
-      "file_type": "code",
-      "source_file": "backend/tests/services/requisition-service.test.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "backend_tests_services_requisition_service_test",
-      "community": 4,
-      "norm_label": "requisition-service.test.js"
-    },
-    {
-      "label": "config.js",
-      "file_type": "code",
-      "source_file": "backend/src/config.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "config.js",
-      "community_name": "app.js",
-      "id": "backend_src_config"
-    },
-    {
-      "label": "config",
-      "file_type": "code",
-      "source_file": "backend/src/config.js",
-      "source_location": "L5",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "config",
-      "community_name": "app.js",
-      "id": "backend_src_config_config"
-    },
-    {
-      "label": "db.js",
-      "file_type": "code",
-      "source_file": "backend/src/plugins/db.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "db.js",
-      "community_name": "app.js",
-      "id": "backend_src_plugins_db"
-    },
-    {
-      "label": "server.js",
-      "file_type": "code",
-      "source_file": "backend/src/server.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "server.js",
-      "community_name": "app.js",
-      "id": "backend_src_server"
-    },
-    {
-      "label": "app.js",
-      "file_type": "code",
-      "source_file": "backend/src/app.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "backend_src_app",
-      "community": 5,
-      "norm_label": "app.js"
-    },
-    {
-      "label": "app.test.js",
-      "file_type": "code",
-      "source_file": "backend/tests/app.test.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "backend_tests_app_test",
-      "community": 5,
-      "norm_label": "app.test.js"
-    },
-    {
-      "label": "PurchaseOrderDetailPage.vue",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderdetailpage",
-      "community": 6,
-      "norm_label": "purchaseorderdetailpage.vue"
-    },
-    {
-      "label": "errorMessage",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L98",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderdetailpage_errormessage",
-      "community": 6,
-      "norm_label": "errormessage"
-    },
-    {
-      "label": "isLoading",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L96",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderdetailpage_isloading",
-      "community": 6,
-      "norm_label": "isloading"
-    },
-    {
-      "label": "isSubmitting",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L97",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderdetailpage_issubmitting",
-      "community": 6,
-      "norm_label": "issubmitting"
-    },
-    {
-      "label": "purchaseOrder",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L95",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderdetailpage_purchaseorder",
-      "community": 6,
-      "norm_label": "purchaseorder"
-    },
-    {
-      "label": "route",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L94",
-      "_origin": "ast",
-      "id": "frontend_src_pages_purchaseorderdetailpage_route",
-      "community": 6,
-      "norm_label": "route"
-    },
-    {
-      "label": "RequisitionCreatePage.vue",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "requisitioncreatepage.vue",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitioncreatepage"
-    },
-    {
-      "label": "errorMessage",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
-      "source_location": "L99",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "errormessage",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitioncreatepage_errormessage"
-    },
-    {
-      "label": "form",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
-      "source_location": "L114",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "form",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitioncreatepage_form"
-    },
-    {
-      "label": "router",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
-      "source_location": "L98",
-      "_origin": "ast",
-      "community": 7,
-      "norm_label": "router",
-      "community_name": "RequisitionCreatePage.vue",
-      "id": "frontend_src_pages_requisitioncreatepage_router"
+      "norm_label": "purchase-order-service.test.js",
+      "community_name": "purchase-order-service.js",
+      "id": "backend_tests_services_purchase_order_service_test"
     },
     {
       "label": "PurchaseOrderLineAllocationTable.vue",
@@ -1375,7 +1165,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "frontend_src_components_purchaseorderlineallocationtable",
-      "community": 8,
+      "community": 10,
       "norm_label": "purchaseorderlineallocationtable.vue"
     },
     {
@@ -1385,7 +1175,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "frontend_src_components_purchaseorderlineallocationtable_emit",
-      "community": 8,
+      "community": 10,
       "norm_label": "emit"
     },
     {
@@ -1395,7 +1185,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "frontend_src_components_purchaseorderlineallocationtable_props",
-      "community": 8,
+      "community": 10,
       "norm_label": "props"
     },
     {
@@ -1405,8 +1195,28 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "frontend_src_components_purchaseorderlineallocationtable_selectedcount",
-      "community": 8,
+      "community": 10,
       "norm_label": "selectedcount"
+    },
+    {
+      "label": "po-module.spec.js",
+      "file_type": "code",
+      "source_file": "tests/e2e/po-module.spec.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_e2e_po_module_spec",
+      "community": 11,
+      "norm_label": "po-module.spec.js"
+    },
+    {
+      "label": "{ test, expect }",
+      "file_type": "code",
+      "source_file": "tests/e2e/po-module.spec.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_e2e_po_module_spec_test_expect",
+      "community": 11,
+      "norm_label": "{ test, expect }"
     },
     {
       "label": "00-init-mvp-db.sh",
@@ -1418,7 +1228,7 @@
         "kind": "file"
       },
       "_origin": "ast",
-      "community": 9,
+      "community": 12,
       "norm_label": "00-init-mvp-db.sh",
       "community_name": "00-init-mvp-db.sh",
       "id": "docker_postgres_init_00_init_mvp_db"
@@ -1433,13 +1243,779 @@
         "kind": "bash_entrypoint"
       },
       "_origin": "ast",
-      "community": 9,
+      "community": 12,
       "norm_label": "00-init-mvp-db.sh script",
       "community_name": "00-init-mvp-db.sh",
       "id": "docker_postgres_init_00_init_mvp_db_sh__entry"
+    },
+    {
+      "label": "pre-push",
+      "file_type": "code",
+      "source_file": ".githooks/pre-push",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "pre-push",
+      "community_name": "pre-push",
+      "id": "githooks_pre_push"
+    },
+    {
+      "label": "pre-push script",
+      "file_type": "code",
+      "source_file": ".githooks/pre-push",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "pre-push script",
+      "community_name": "pre-push",
+      "id": "githooks_pre_push__entry"
+    },
+    {
+      "label": "playwright.config.js",
+      "file_type": "code",
+      "source_file": "playwright.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "playwright.config.js",
+      "community_name": "playwright.config.js",
+      "id": "playwright_config"
+    },
+    {
+      "label": "{ defineConfig }",
+      "file_type": "code",
+      "source_file": "playwright.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "{ defineconfig }",
+      "community_name": "playwright.config.js",
+      "id": "playwright_config_defineconfig"
+    },
+    {
+      "label": "gr-module.spec.js",
+      "file_type": "code",
+      "source_file": "tests/e2e/gr-module.spec.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_e2e_gr_module_spec",
+      "community": 15,
+      "norm_label": "gr-module.spec.js"
+    },
+    {
+      "label": "{ test, expect }",
+      "file_type": "code",
+      "source_file": "tests/e2e/gr-module.spec.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_e2e_gr_module_spec_test_expect",
+      "community": 15,
+      "norm_label": "{ test, expect }"
+    },
+    {
+      "label": "jest.config.js",
+      "file_type": "code",
+      "source_file": "backend/jest.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 16,
+      "norm_label": "jest.config.js",
+      "community_name": "jest.config.js",
+      "id": "backend_jest_config"
+    },
+    {
+      "label": "babel.config.cjs",
+      "file_type": "code",
+      "source_file": "frontend/babel.config.cjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 17,
+      "norm_label": "babel.config.cjs",
+      "community_name": "babel.config.cjs",
+      "id": "frontend_babel_config"
+    },
+    {
+      "label": "jest.config.cjs",
+      "file_type": "code",
+      "source_file": "frontend/jest.config.cjs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 18,
+      "norm_label": "jest.config.cjs",
+      "community_name": "jest.config.cjs",
+      "id": "frontend_jest_config"
+    },
+    {
+      "label": "vite.config.js",
+      "file_type": "code",
+      "source_file": "frontend/vite.config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 19,
+      "norm_label": "vite.config.js",
+      "community_name": "vite.config.js",
+      "id": "frontend_vite_config"
+    },
+    {
+      "label": "App.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_app",
+      "community": 2,
+      "norm_label": "app.vue"
+    },
+    {
+      "label": "isDashboard",
+      "file_type": "code",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "frontend_src_app_isdashboard",
+      "community": 2,
+      "norm_label": "isdashboard"
+    },
+    {
+      "label": "isGoodsReceipts",
+      "file_type": "code",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "frontend_src_app_isgoodsreceipts",
+      "community": 2,
+      "norm_label": "isgoodsreceipts"
+    },
+    {
+      "label": "isPurchaseOrders",
+      "file_type": "code",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "frontend_src_app_ispurchaseorders",
+      "community": 2,
+      "norm_label": "ispurchaseorders"
+    },
+    {
+      "label": "isRequisitions",
+      "file_type": "code",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "frontend_src_app_isrequisitions",
+      "community": 2,
+      "norm_label": "isrequisitions"
+    },
+    {
+      "label": "route",
+      "file_type": "code",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "frontend_src_app_route",
+      "community": 2,
+      "norm_label": "route"
+    },
+    {
+      "label": "GoodsReceiptCreatePage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage",
+      "community": 2,
+      "norm_label": "goodsreceiptcreatepage.vue"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_errormessage",
+      "community": 2,
+      "norm_label": "errormessage"
+    },
+    {
+      "label": "form",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_form",
+      "community": 2,
+      "norm_label": "form"
+    },
+    {
+      "label": "isLoading",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_isloading",
+      "community": 2,
+      "norm_label": "isloading"
+    },
+    {
+      "label": "isSaving",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_issaving",
+      "community": 2,
+      "norm_label": "issaving"
+    },
+    {
+      "label": "lines",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_lines",
+      "community": 2,
+      "norm_label": "lines"
+    },
+    {
+      "label": "purchaseOrder",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_purchaseorder",
+      "community": 2,
+      "norm_label": "purchaseorder"
+    },
+    {
+      "label": "route",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_route",
+      "community": 2,
+      "norm_label": "route"
+    },
+    {
+      "label": "router",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_router",
+      "community": 2,
+      "norm_label": "router"
+    },
+    {
+      "label": "selectedLines",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "frontend_src_pages_goodsreceiptcreatepage_selectedlines",
+      "community": 2,
+      "norm_label": "selectedlines"
+    },
+    {
+      "label": "PurchaseOrderHeaderForm.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "purchaseorderheaderform.vue",
+      "community_name": "PurchaseOrderCreatePage.vue",
+      "id": "frontend_src_components_purchaseorderheaderform"
+    },
+    {
+      "label": "emit",
+      "file_type": "code",
+      "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
+      "source_location": "L46",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "emit",
+      "community_name": "PurchaseOrderCreatePage.vue",
+      "id": "frontend_src_components_purchaseorderheaderform_emit"
+    },
+    {
+      "label": "props",
+      "file_type": "code",
+      "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
+      "source_location": "L39",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "props",
+      "community_name": "PurchaseOrderCreatePage.vue",
+      "id": "frontend_src_components_purchaseorderheaderform_props"
+    },
+    {
+      "label": "PurchaseOrderCreatePage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage",
+      "community": 3,
+      "norm_label": "purchaseordercreatepage.vue"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_errormessage",
+      "community": 3,
+      "norm_label": "errormessage"
+    },
+    {
+      "label": "form",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_form",
+      "community": 3,
+      "norm_label": "form"
+    },
+    {
+      "label": "isLoading",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_isloading",
+      "community": 3,
+      "norm_label": "isloading"
+    },
+    {
+      "label": "isSaving",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_issaving",
+      "community": 3,
+      "norm_label": "issaving"
+    },
+    {
+      "label": "lines",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_lines",
+      "community": 3,
+      "norm_label": "lines"
+    },
+    {
+      "label": "savedMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_savedmessage",
+      "community": 3,
+      "norm_label": "savedmessage"
+    },
+    {
+      "label": "selectedLines",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_selectedlines",
+      "community": 3,
+      "norm_label": "selectedlines"
+    },
+    {
+      "label": "totalValue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseordercreatepage_totalvalue",
+      "community": 3,
+      "norm_label": "totalvalue"
+    },
+    {
+      "label": "goods-receipt-routes.js",
+      "file_type": "code",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_src_routes_goods_receipt_routes",
+      "community": 4,
+      "norm_label": "goods-receipt-routes.js"
+    },
+    {
+      "label": "goods-receipt-service.js",
+      "file_type": "code",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_src_services_goods_receipt_service",
+      "community": 4,
+      "norm_label": "goods-receipt-service.js"
+    },
+    {
+      "label": "goods-receipt-service.test.js",
+      "file_type": "code",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_tests_services_goods_receipt_service_test",
+      "community": 4,
+      "norm_label": "goods-receipt-service.test.js"
+    },
+    {
+      "label": "requisition-routes.js",
+      "file_type": "code",
+      "source_file": "backend/src/routes/requisition-routes.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "requisition-routes.js",
+      "community_name": "requisition-service.js",
+      "id": "backend_src_routes_requisition_routes"
+    },
+    {
+      "label": "requisition-service.js",
+      "file_type": "code",
+      "source_file": "backend/src/services/requisition-service.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "requisition-service.js",
+      "community_name": "requisition-service.js",
+      "id": "backend_src_services_requisition_service"
+    },
+    {
+      "label": "requisition-service.test.js",
+      "file_type": "code",
+      "source_file": "backend/tests/services/requisition-service.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "requisition-service.test.js",
+      "community_name": "requisition-service.js",
+      "id": "backend_tests_services_requisition_service_test"
+    },
+    {
+      "label": "PurchaseOrderDetailPage.test.js",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderDetailPage.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "purchaseorderdetailpage.test.js",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseorderdetailpage_test"
+    },
+    {
+      "label": "{ api: mockApi }",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderDetailPage.test.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "{ api: mockapi }",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseorderdetailpage_test_api_mockapi"
+    },
+    {
+      "label": "purchaseOrder",
+      "file_type": "code",
+      "source_file": "frontend/tests/PurchaseOrderDetailPage.test.js",
+      "source_location": "L18",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "purchaseorder",
+      "community_name": "api.js",
+      "id": "frontend_tests_purchaseorderdetailpage_test_purchaseorder"
+    },
+    {
+      "label": "PurchaseOrderDetailPage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage",
+      "community": 6,
+      "norm_label": "purchaseorderdetailpage.vue"
+    },
+    {
+      "label": "canReceive",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage_canreceive",
+      "community": 6,
+      "norm_label": "canreceive"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage_errormessage",
+      "community": 6,
+      "norm_label": "errormessage"
+    },
+    {
+      "label": "isLoading",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage_isloading",
+      "community": 6,
+      "norm_label": "isloading"
+    },
+    {
+      "label": "isSubmitting",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage_issubmitting",
+      "community": 6,
+      "norm_label": "issubmitting"
+    },
+    {
+      "label": "purchaseOrder",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage_purchaseorder",
+      "community": 6,
+      "norm_label": "purchaseorder"
+    },
+    {
+      "label": "route",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "frontend_src_pages_purchaseorderdetailpage_route",
+      "community": 6,
+      "norm_label": "route"
+    },
+    {
+      "label": "config.js",
+      "file_type": "code",
+      "source_file": "backend/src/config.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "config.js",
+      "community_name": "buildApp",
+      "id": "backend_src_config"
+    },
+    {
+      "label": "config",
+      "file_type": "code",
+      "source_file": "backend/src/config.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "config",
+      "community_name": "buildApp",
+      "id": "backend_src_config_config"
+    },
+    {
+      "label": "db.js",
+      "file_type": "code",
+      "source_file": "backend/src/plugins/db.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "db.js",
+      "community_name": "buildApp",
+      "id": "backend_src_plugins_db"
+    },
+    {
+      "label": "server.js",
+      "file_type": "code",
+      "source_file": "backend/src/server.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "server.js",
+      "community_name": "buildApp",
+      "id": "backend_src_server"
+    },
+    {
+      "label": "app.test.js",
+      "file_type": "code",
+      "source_file": "backend/tests/app.test.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "app.test.js",
+      "community_name": "buildApp",
+      "id": "backend_tests_app_test"
+    },
+    {
+      "label": "app.js",
+      "file_type": "code",
+      "source_file": "backend/src/app.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "backend_src_app",
+      "community": 7,
+      "norm_label": "app.js"
+    },
+    {
+      "label": "RequisitionCreatePage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "requisitioncreatepage.vue",
+      "community_name": "RequisitionCreatePage.vue",
+      "id": "frontend_src_pages_requisitioncreatepage"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
+      "source_location": "L99",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "errormessage",
+      "community_name": "RequisitionCreatePage.vue",
+      "id": "frontend_src_pages_requisitioncreatepage_errormessage"
+    },
+    {
+      "label": "form",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
+      "source_location": "L114",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "form",
+      "community_name": "RequisitionCreatePage.vue",
+      "id": "frontend_src_pages_requisitioncreatepage_form"
+    },
+    {
+      "label": "router",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionCreatePage.vue",
+      "source_location": "L98",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "router",
+      "community_name": "RequisitionCreatePage.vue",
+      "id": "frontend_src_pages_requisitioncreatepage_router"
+    },
+    {
+      "label": "RequisitionDetailPage.vue",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "requisitiondetailpage.vue",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage"
+    },
+    {
+      "label": "errorMessage",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L95",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "errormessage",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage_errormessage"
+    },
+    {
+      "label": "requisition",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L94",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "requisition",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage_requisition"
+    },
+    {
+      "label": "route",
+      "file_type": "code",
+      "source_file": "frontend/src/pages/RequisitionDetailPage.vue",
+      "source_location": "L93",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "route",
+      "community_name": "index.js",
+      "id": "frontend_src_pages_requisitiondetailpage_route"
     }
   ],
   "links": [
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "target": "backend_src_services_goods_receipt_service_listgoodsreceipts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "target": "backend_src_services_goods_receipt_service_creategoodsreceipt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "target": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "target": "backend_src_services_goods_receipt_service_postgoodsreceipt"
+    },
     {
       "relation": "calls",
       "context": "call",
@@ -1583,6 +2159,90 @@
       "confidence_score": 1.0,
       "source": "backend_src_server_start",
       "target": "backend_src_app_buildapp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "target": "backend_src_services_goods_receipt_service_validatecreatepayload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "target": "backend_src_services_goods_receipt_service_validationerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "target": "backend_src_services_goods_receipt_service_creategrnumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "target": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "target": "backend_src_services_goods_receipt_service_mapheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L189",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_postgoodsreceipt",
+      "target": "backend_src_services_goods_receipt_service_validationerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L231",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_postgoodsreceipt",
+      "target": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -1736,9 +2396,9 @@
       "source_location": "L49",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_components_purchaseorderheaderform_updatefield",
-      "target": "frontend_src_components_purchaseorderheaderform_emit",
-      "confidence_score": 1.0
+      "target": "frontend_src_components_purchaseorderheaderform_emit"
     },
     {
       "relation": "calls",
@@ -1792,6 +2452,18 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_app",
+      "target": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "backend/src/plugins/db.js",
       "source_location": "L3",
       "weight": 1.0,
@@ -1799,6 +2471,54 @@
       "confidence_score": 1.0,
       "source": "backend_src_plugins_db",
       "target": "backend_src_config_config"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes",
+      "target": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes",
+      "target": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes",
+      "target": "backend_src_services_goods_receipt_service_listgoodsreceipts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes",
+      "target": "backend_src_services_goods_receipt_service_postgoodsreceipt",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -1964,8 +2684,32 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_app_test",
-      "target": "backend_src_app_buildapp",
+      "target": "backend_src_app_buildapp"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_tests_services_goods_receipt_service_test",
+      "target": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_tests_services_goods_receipt_service_test",
+      "target": "backend_src_services_goods_receipt_service_postgoodsreceipt",
       "confidence_score": 1.0
     },
     {
@@ -1976,9 +2720,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_src_services_purchase_order_service_createpurchaseorder",
-      "confidence_score": 1.0
+      "target": "backend_src_services_purchase_order_service_createpurchaseorder"
     },
     {
       "relation": "imports",
@@ -1988,9 +2732,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_src_services_purchase_order_service_getopenpolines",
-      "confidence_score": 1.0
+      "target": "backend_src_services_purchase_order_service_getopenpolines"
     },
     {
       "relation": "imports",
@@ -2000,9 +2744,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_src_services_purchase_order_service_listpurchaseorders",
-      "confidence_score": 1.0
+      "target": "backend_src_services_purchase_order_service_listpurchaseorders"
     },
     {
       "relation": "imports",
@@ -2012,9 +2756,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_src_services_purchase_order_service_submitpurchaseorder",
-      "confidence_score": 1.0
+      "target": "backend_src_services_purchase_order_service_submitpurchaseorder"
     },
     {
       "relation": "imports",
@@ -2024,9 +2768,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_requisition_service_test",
-      "target": "backend_src_services_requisition_service_getrequisitionopenlines",
-      "confidence_score": 1.0
+      "target": "backend_src_services_requisition_service_getrequisitionopenlines"
     },
     {
       "relation": "imports",
@@ -2036,9 +2780,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_requisition_service_test",
-      "target": "backend_src_services_requisition_service_listrequisitions",
-      "confidence_score": 1.0
+      "target": "backend_src_services_requisition_service_listrequisitions"
     },
     {
       "relation": "imports",
@@ -2057,12 +2801,48 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/DashboardPage.vue",
-      "source_location": "L67",
+      "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "frontend_src_pages_dashboardpage",
-      "target": "frontend_src_api_api"
+      "target": "frontend_src_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_api_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_api_api",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -2081,7 +2861,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -2096,9 +2876,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_api_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api_api"
     },
     {
       "relation": "imports",
@@ -2144,9 +2924,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseordercreatepage_test",
-      "target": "frontend_src_api_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api_api"
     },
     {
       "relation": "imports",
@@ -2156,9 +2936,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderdetailpage_test",
-      "target": "frontend_src_api_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api_api"
     },
     {
       "relation": "imports",
@@ -2168,9 +2948,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderlistpage_test",
-      "target": "frontend_src_api_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api_api"
     },
     {
       "relation": "imports_from",
@@ -2212,6 +2992,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_app",
+      "target": "backend_src_routes_goods_receipt_routes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "backend/src/plugins/db.js",
       "source_location": "L3",
       "weight": 1.0,
@@ -2219,6 +3011,18 @@
       "confidence_score": 1.0,
       "source": "backend_src_plugins_db",
       "target": "backend_src_config"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes",
+      "target": "backend_src_services_goods_receipt_service",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2276,8 +3080,20 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_app_test",
-      "target": "backend_src_app",
+      "target": "backend_src_app"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_tests_services_goods_receipt_service_test",
+      "target": "backend_src_services_goods_receipt_service",
       "confidence_score": 1.0
     },
     {
@@ -2288,9 +3104,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_src_services_purchase_order_service",
-      "confidence_score": 1.0
+      "target": "backend_src_services_purchase_order_service"
     },
     {
       "relation": "imports_from",
@@ -2300,9 +3116,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_requisition_service_test",
-      "target": "backend_src_services_requisition_service",
-      "confidence_score": 1.0
+      "target": "backend_src_services_requisition_service"
     },
     {
       "relation": "imports_from",
@@ -2333,12 +3149,48 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/DashboardPage.vue",
-      "source_location": "L67",
+      "source_location": "L70",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "frontend_src_pages_dashboardpage",
-      "target": "frontend_src_api"
+      "target": "frontend_src_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_api",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2381,7 +3233,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -2396,9 +3248,9 @@
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api"
     },
     {
       "relation": "imports_from",
@@ -2435,6 +3287,30 @@
       "confidence_score": 1.0,
       "source": "frontend_src_pages_requisitionlistpage",
       "target": "frontend_src_api"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/router/index.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_router_index",
+      "target": "frontend_src_pages_goodsreceiptcreatepage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/router/index.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_router_index",
+      "target": "frontend_src_pages_goodsreceiptdetailpage",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -2524,13 +3400,25 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/router/index.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_router_index",
+      "target": "frontend_src_pages_goodsreceiptlistpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/tests/PurchaseOrderCreatePage.test.js",
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseordercreatepage_test",
-      "target": "frontend_src_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api"
     },
     {
       "relation": "imports_from",
@@ -2540,9 +3428,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseordercreatepage_test",
-      "target": "frontend_src_pages_purchaseordercreatepage",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseordercreatepage"
     },
     {
       "relation": "imports_from",
@@ -2552,9 +3440,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseordercreatepage_test",
-      "target": "frontend_src_components_purchaseorderheaderform",
-      "confidence_score": 1.0
+      "target": "frontend_src_components_purchaseorderheaderform"
     },
     {
       "relation": "imports_from",
@@ -2564,9 +3452,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseordercreatepage_test",
-      "target": "frontend_src_components_purchaseorderlineallocationtable",
-      "confidence_score": 1.0
+      "target": "frontend_src_components_purchaseorderlineallocationtable"
     },
     {
       "relation": "imports_from",
@@ -2576,9 +3464,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderdetailpage_test",
-      "target": "frontend_src_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api"
     },
     {
       "relation": "imports_from",
@@ -2588,9 +3476,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderdetailpage_test",
-      "target": "frontend_src_pages_purchaseorderdetailpage",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseorderdetailpage"
     },
     {
       "relation": "imports_from",
@@ -2600,9 +3488,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderlistpage_test",
-      "target": "frontend_src_api",
-      "confidence_score": 1.0
+      "target": "frontend_src_api"
     },
     {
       "relation": "imports_from",
@@ -2612,15 +3500,15 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderlistpage_test",
-      "target": "frontend_src_pages_purchaseorderlistpage",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseorderlistpage"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.js",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
       "source": "backend_src_app",
@@ -2637,6 +3525,17 @@
       "confidence_score": 1.0,
       "source": "backend_src_config",
       "target": "backend_src_config_config"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/routes/goods-receipt-routes.js",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_routes_goods_receipt_routes",
+      "target": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2670,6 +3569,105 @@
       "confidence_score": 1.0,
       "source": "backend_src_server",
       "target": "backend_src_server_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_creategoodsreceipt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L171",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_postgoodsreceipt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_mapline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_mapheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_creategrnumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_validationerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_validatecreatepayload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_listgoodsreceipts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service",
+      "target": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -2883,13 +3881,35 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_tests_services_goods_receipt_service_test",
+      "target": "backend_tests_services_goods_receipt_service_test_mockdb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/services/goods-receipt-service.test.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_tests_services_goods_receipt_service_test",
+      "target": "backend_tests_services_goods_receipt_service_test_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "backend/tests/services/purchase-order-service.test.js",
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_tests_services_purchase_order_service_test_validpayload",
-      "confidence_score": 1.0
+      "target": "backend_tests_services_purchase_order_service_test_validpayload"
     },
     {
       "relation": "contains",
@@ -2898,9 +3918,9 @@
       "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_tests_services_purchase_order_service_test_mockclient",
-      "confidence_score": 1.0
+      "target": "backend_tests_services_purchase_order_service_test_mockclient"
     },
     {
       "relation": "contains",
@@ -2909,9 +3929,9 @@
       "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_tests_services_purchase_order_service_test_mockdb",
-      "confidence_score": 1.0
+      "target": "backend_tests_services_purchase_order_service_test_mockdb"
     },
     {
       "relation": "contains",
@@ -2920,9 +3940,9 @@
       "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_tests_services_purchase_order_service_test_happypathclientresponses",
-      "confidence_score": 1.0
+      "target": "backend_tests_services_purchase_order_service_test_happypathclientresponses"
     },
     {
       "relation": "contains",
@@ -2931,9 +3951,9 @@
       "source_location": "L87",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_purchase_order_service_test",
-      "target": "backend_tests_services_purchase_order_service_test_detailqueryresponses",
-      "confidence_score": 1.0
+      "target": "backend_tests_services_purchase_order_service_test_detailqueryresponses"
     },
     {
       "relation": "contains",
@@ -2942,9 +3962,9 @@
       "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "backend_tests_services_requisition_service_test",
-      "target": "backend_tests_services_requisition_service_test_mockdb",
-      "confidence_score": 1.0
+      "target": "backend_tests_services_requisition_service_test_mockdb"
     },
     {
       "relation": "contains",
@@ -2983,7 +4003,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.vue",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_app",
@@ -2994,7 +4014,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.vue",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_app",
@@ -3005,7 +4025,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.vue",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_app",
@@ -3016,7 +4036,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.vue",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_app",
@@ -3026,13 +4046,24 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.vue",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_app",
+      "target": "frontend_src_app_isgoodsreceipts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/PurchaseOrderHeaderForm.vue",
       "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_components_purchaseorderheaderform",
-      "target": "frontend_src_components_purchaseorderheaderform_props",
-      "confidence_score": 1.0
+      "target": "frontend_src_components_purchaseorderheaderform_props"
     },
     {
       "relation": "contains",
@@ -3041,9 +4072,9 @@
       "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_components_purchaseorderheaderform",
-      "target": "frontend_src_components_purchaseorderheaderform_emit",
-      "confidence_score": 1.0
+      "target": "frontend_src_components_purchaseorderheaderform_emit"
     },
     {
       "relation": "contains",
@@ -3052,9 +4083,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_components_purchaseorderheaderform",
-      "target": "frontend_src_components_purchaseorderheaderform_updatefield",
-      "confidence_score": 1.0
+      "target": "frontend_src_components_purchaseorderheaderform_updatefield"
     },
     {
       "relation": "contains",
@@ -3115,12 +4146,232 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/DashboardPage.vue",
-      "source_location": "L69",
+      "source_location": "L72",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "frontend_src_pages_dashboardpage",
-      "target": "frontend_src_pages_dashboardpage_stats"
+      "target": "frontend_src_pages_dashboardpage_stats",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_router",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_purchaseorder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_isloading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_issaving",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_errormessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_selectedlines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_receipt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_isloading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_isposting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_errormessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_pages_goodsreceiptlistpage_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_pages_goodsreceiptlistpage_isloading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_pages_goodsreceiptlistpage_errormessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_pages_goodsreceiptlistpage_formatdate",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3262,6 +4513,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
+      "target": "frontend_src_pages_purchaseorderdetailpage_canreceive",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "frontend_src_pages_purchaseorderdetailpage",
       "target": "frontend_src_pages_purchaseorderdetailpage_formatprice",
       "confidence_score": 1.0
     },
@@ -3269,7 +4531,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L116",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -3280,7 +4542,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L94",
+      "source_location": "L95",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -3291,7 +4553,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L95",
+      "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -3302,7 +4564,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L96",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -3313,7 +4575,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L97",
+      "source_location": "L98",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -3324,7 +4586,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L98",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_pages_purchaseorderdetailpage",
@@ -3338,9 +4600,9 @@
       "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_pages_purchaseorderlistpage_items",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseorderlistpage_items"
     },
     {
       "relation": "contains",
@@ -3349,9 +4611,9 @@
       "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_pages_purchaseorderlistpage_isloading",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseorderlistpage_isloading"
     },
     {
       "relation": "contains",
@@ -3360,9 +4622,9 @@
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_pages_purchaseorderlistpage_errormessage",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseorderlistpage_errormessage"
     },
     {
       "relation": "contains",
@@ -3371,9 +4633,9 @@
       "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_pages_purchaseorderlistpage_formatdate",
-      "confidence_score": 1.0
+      "target": "frontend_src_pages_purchaseorderlistpage_formatdate"
     },
     {
       "relation": "contains",
@@ -3533,7 +4795,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/router/index.js",
-      "source_location": "L10",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_router_index",
@@ -3544,7 +4806,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/router/index.js",
-      "source_location": "L20",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "frontend_src_router_index",
@@ -3558,9 +4820,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseordercreatepage_test",
-      "target": "frontend_tests_purchaseordercreatepage_test_api_mockapi",
-      "confidence_score": 1.0
+      "target": "frontend_tests_purchaseordercreatepage_test_api_mockapi"
     },
     {
       "relation": "contains",
@@ -3569,9 +4831,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderdetailpage_test",
-      "target": "frontend_tests_purchaseorderdetailpage_test_api_mockapi",
-      "confidence_score": 1.0
+      "target": "frontend_tests_purchaseorderdetailpage_test_api_mockapi"
     },
     {
       "relation": "contains",
@@ -3580,9 +4842,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderdetailpage_test",
-      "target": "frontend_tests_purchaseorderdetailpage_test_purchaseorder",
-      "confidence_score": 1.0
+      "target": "frontend_tests_purchaseorderdetailpage_test_purchaseorder"
     },
     {
       "relation": "contains",
@@ -3591,9 +4853,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderlistpage_test",
-      "target": "frontend_tests_purchaseorderlistpage_test_api_mockapi",
-      "confidence_score": 1.0
+      "target": "frontend_tests_purchaseorderlistpage_test_api_mockapi"
     },
     {
       "relation": "contains",
@@ -3602,9 +4864,9 @@
       "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "frontend_tests_purchaseorderlistpage_test",
-      "target": "frontend_tests_purchaseorderlistpage_test_routerstubs",
-      "confidence_score": 1.0
+      "target": "frontend_tests_purchaseorderlistpage_test_routerstubs"
     },
     {
       "relation": "contains",
@@ -3613,9 +4875,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "githooks_pre_push",
-      "target": "githooks_pre_push__entry",
-      "confidence_score": 1.0
+      "target": "githooks_pre_push__entry"
     },
     {
       "relation": "contains",
@@ -3629,6 +4891,39 @@
       "target": "playwright_config_defineconfig"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/e2e/gr-module.spec.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_e2e_gr_module_spec",
+      "target": "tests_e2e_gr_module_spec_test_expect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/e2e/po-module.spec.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_e2e_po_module_spec",
+      "target": "tests_e2e_po_module_spec_test_expect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/e2e/po-module.spec.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_e2e_po_module_spec",
+      "target": "tests_e2e_po_module_spec_opencreatepurchaseorderpage",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "backend/src/plugins/db.js",
@@ -3639,6 +4934,30 @@
       "confidence_score": 0.5,
       "source": "backend_src_plugins_db",
       "target": "backend_src_plugins_db_dbplugin"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_getgoodsreceiptbyid",
+      "target": "backend_src_services_goods_receipt_service_mapline",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "backend/src/services/goods-receipt-service.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_services_goods_receipt_service_listgoodsreceipts",
+      "target": "backend_src_services_goods_receipt_service_mapheader",
+      "confidence_score": 0.5
     },
     {
       "relation": "indirect_call",
@@ -3703,6 +5022,42 @@
     {
       "relation": "indirect_call",
       "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/GoodsReceiptCreatePage.vue",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "argument",
+      "source": "frontend_src_pages_goodsreceiptcreatepage",
+      "target": "frontend_src_pages_goodsreceiptcreatepage_load",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/GoodsReceiptDetailPage.vue",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "argument",
+      "source": "frontend_src_pages_goodsreceiptdetailpage",
+      "target": "frontend_src_pages_goodsreceiptdetailpage_load",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
+      "source_file": "frontend/src/pages/GoodsReceiptListPage.vue",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "context": "argument",
+      "source": "frontend_src_pages_goodsreceiptlistpage",
+      "target": "frontend_src_pages_goodsreceiptlistpage_load",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "indirect_call",
+      "confidence": "INFERRED",
       "source_file": "frontend/src/pages/PurchaseOrderCreatePage.vue",
       "source_location": "L111",
       "weight": 1.0,
@@ -3716,7 +5071,7 @@
       "relation": "indirect_call",
       "confidence": "INFERRED",
       "source_file": "frontend/src/pages/PurchaseOrderDetailPage.vue",
-      "source_location": "L128",
+      "source_location": "L130",
       "weight": 1.0,
       "_origin": "ast",
       "context": "argument",
@@ -3732,9 +5087,9 @@
       "weight": 1.0,
       "_origin": "ast",
       "context": "argument",
+      "confidence_score": 0.5,
       "source": "frontend_src_pages_purchaseorderlistpage",
-      "target": "frontend_src_pages_purchaseorderlistpage_load",
-      "confidence_score": 0.5
+      "target": "frontend_src_pages_purchaseorderlistpage_load"
     },
     {
       "relation": "indirect_call",
@@ -3754,7 +5109,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/app.js",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "backend_src_app_buildapp",
@@ -3766,7 +5121,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/app.js",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast",
       "source": "backend_src_app_buildapp",
@@ -3778,13 +5133,25 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "backend/src/app.js",
-      "source_location": "L32",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "backend_src_app_buildapp",
       "target": "backend_src_routes_purchase_order_routes_purchaseorderroutes"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/src/app.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "backend_src_app_buildapp",
+      "target": "backend_src_routes_goods_receipt_routes_goodsreceiptroutes"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b54ca0158d84854804eff516ea47de027d9abe92"
+  "built_at_commit": "fda44f225c87bb0d552e498e75effa06583b6224"
 }

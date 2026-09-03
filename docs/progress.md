@@ -14,9 +14,9 @@ This repository contains a procurement MVP workshop application built with:
 
 The database migration and seed data are available under `db/`. The baseline dashboard and Purchase Requisition (PR) module are implemented, including PR list, create, detail, submit, approve, and open-line flows.
 
-The Purchase Order (PO) backend is implemented. The frontend integrates the PO create flow with approved PR open-line data and the PO create/submit endpoints, plus API-backed PO list and detail pages.
+The Purchase Order (PO) backend and frontend are implemented. The frontend integrates PO creation with approved PR open-line data and the PO create/submit endpoints, plus API-backed PO list and detail pages.
 
-Goods Receipt (GR) functionality remains out of scope for the current workshop sprint.
+The Goods Receipt (GR) backend and frontend are also implemented. Users can create and post receipts against submitted POs.
 
 ## Implemented PO Backend
 
@@ -62,7 +62,7 @@ The service creates the PO in `DRAFT` status, creates PO lines and PR-to-PO allo
 - The application navigation includes a Purchase Orders link.
 - `PurchaseOrderListPage.vue` loads and displays PO headers with links to detail pages.
 - `PurchaseOrderDetailPage.vue` displays PO lines, receipt-open quantities, PR allocations, and draft submission.
-- `PurchaseOrderCreatePage.vue` renders local sample approved PR lines, selection, quantity limits, delivery fields, unit prices, selected-line totals, and draft feedback.
+- `PurchaseOrderCreatePage.vue` loads approved PR lines, supports selection and quantity limits, and captures vendor, delivery, site, price, and draft details.
 - `PurchaseOrderHeaderForm.vue` is a controlled reusable header form.
 - `PurchaseOrderLineAllocationTable.vue` is a controlled reusable allocation table using props-down/events-up updates.
 - The create page loads open lines from approved requisitions and maps them into the generated allocation table.
@@ -70,26 +70,62 @@ The service creates the PO in `DRAFT` status, creates PO lines and PR-to-PO allo
 - Submit PO calls the create endpoint and then `POST /api/purchase-orders/:id/submit`.
 - Backend validation errors, including over-allocation 422 responses, are displayed on the page.
 
+## Implemented GR Backend
+
+GR behavior is owned by `backend/src/services/goods-receipt-service.js` and exposed by `backend/src/routes/goods-receipt-routes.js`.
+
+### Available Endpoints
+
+| Method | Endpoint | Purpose |
+| --- | --- | --- |
+| `GET` | `/api/goods-receipts` | Return goods receipt headers |
+| `POST` | `/api/goods-receipts` | Create a draft receipt from open lines on a submitted PO |
+| `GET` | `/api/goods-receipts/:id` | Return a receipt with its lines and PO information |
+| `POST` | `/api/goods-receipts/:id/post` | Post a draft receipt and update received quantities |
+
+### Business Rules
+
+- A receipt can only be created against a `SUBMITTED` PO.
+- Receipt quantities must be positive and cannot exceed the PO line's open quantity.
+- Each receipt line requires an actual site code.
+- Only a `DRAFT` receipt can transition to `POSTED`.
+- Posting updates the received quantity on the related PO line.
+
+## Implemented GR Frontend
+
+- `/goods-receipts`, `/goods-receipts/new`, and `/goods-receipts/:id` are registered in the Vue router.
+- The application navigation includes a Goods Receipts link.
+- `GoodsReceiptListPage.vue` lists receipts and links to detail pages.
+- `GoodsReceiptCreatePage.vue` loads open lines from a submitted PO and creates a draft receipt.
+- `GoodsReceiptDetailPage.vue` displays receipt lines and posts a draft receipt.
+- Purchase order detail provides the entry point to receive goods from open PO lines.
+
+## Documentation and Graph
+
+- `docs/application-overview.md` documents the current architecture, user flow, API sequence, and scope boundaries with Mermaid diagrams.
+- `graphify-out/` contains the refreshed repository graph, report, and interactive visualization.
+
 ## Verification
 
 The latest unit-test runs completed successfully:
 
-- Backend: 3 suites, 29 tests passed
-- Frontend: 1 suite, 8 tests passed
+- Backend: 4 suites, 34 tests passed
+- Frontend: 3 suites, 14 tests passed
 - Frontend Vite production build passed
 - Backend coverage: 48.35% statements, 39.83% branches, 51.21% functions, 47.94% lines
 - Frontend coverage: 68.08% statements, 41% branches, 47.82% functions, 77.35% lines
 - PO backend service coverage: 98.93% statements, 95.74% branches, 100% functions, 98.88% lines
 
-The tests cover PO payload validation, approved-line allocation rules, over-allocation protection, status transitions, list ordering, empty results, and open-line filtering. Frontend tests cover PO form rendering, approved PR line loading, required vendor behavior, allocation-table rendering, disabled quantities, editable fields, draft creation, submit-after-create, totals, and API error feedback.
+The tests cover PO payload validation, approved-line allocation rules, over-allocation protection, status transitions, list ordering, empty results, and open-line filtering. GR service tests cover receipt validation, submitted-PO requirements, open-quantity protection, posting, and status transitions. Frontend tests cover PO form rendering, approved PR line loading, required vendor behavior, allocation-table rendering, disabled quantities, editable fields, draft creation, submit-after-create, totals, and API error feedback.
 
-## Remaining PO Work
+Playwright specs are present for the PO creation/submission journey and the GR creation/posting journey. The latest unit-test run passed; E2E execution still depends on the configured application and database environment.
 
-1. Add Playwright coverage for the approved PR to PO creation and submission journey.
+## Remaining Work
+
+1. Run the Playwright PO and GR journeys against a clean database seed and record the result.
 
 ## Explicitly Out Of Scope
 
-- Goods Receipt pages and APIs
 - PO cancellation, editing, and deletion
 - Vendor master data
 - Dashboard PO analytics

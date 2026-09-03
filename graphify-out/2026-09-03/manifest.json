@@ -1,206 +1,254 @@
 {
   "backend/jest.config.js": {
     "mtime": 1788323108.819741,
-    "seen": 1788404323.1314409,
+    "seen": 1788419122.595475,
     "ast_hash": "6a62080ac296ab34cc8caa6b82fca604",
     "semantic_hash": "6a62080ac296ab34cc8caa6b82fca604"
   },
   "backend/src/app.js": {
-    "mtime": 1788335897.7059946,
-    "seen": 1788404323.1314418,
-    "ast_hash": "39fe522d36d3b7b8d0f68c9c56107915",
-    "semantic_hash": "39fe522d36d3b7b8d0f68c9c56107915"
+    "mtime": 1788417715.068325,
+    "seen": 1788419122.595476,
+    "ast_hash": "064c90db363cec9bf7b618b936b6d9dc",
+    "semantic_hash": "064c90db363cec9bf7b618b936b6d9dc"
   },
   "backend/src/config.js": {
     "mtime": 1788323108.8204796,
-    "seen": 1788404323.131443,
+    "seen": 1788419122.595477,
     "ast_hash": "befe927351af7dff400f558b621ac69a",
     "semantic_hash": "befe927351af7dff400f558b621ac69a"
   },
   "backend/src/plugins/db.js": {
     "mtime": 1788323108.820578,
-    "seen": 1788404323.131444,
+    "seen": 1788419122.595477,
     "ast_hash": "a603dc234f2eb4f9b9b9bb48ccd06c4a",
     "semantic_hash": "a603dc234f2eb4f9b9b9bb48ccd06c4a"
   },
   "backend/src/routes/purchase-order-routes.js": {
     "mtime": 1788323108.8206897,
-    "seen": 1788404323.131444,
+    "seen": 1788419122.595479,
     "ast_hash": "3e096edd89932d635ed8847bcb2e908e",
     "semantic_hash": "3e096edd89932d635ed8847bcb2e908e"
   },
   "backend/src/routes/requisition-routes.js": {
     "mtime": 1788323108.8207524,
-    "seen": 1788404323.131445,
+    "seen": 1788419122.59548,
     "ast_hash": "95b9aea3f9aeb61ca97624cba9512fd8",
     "semantic_hash": "95b9aea3f9aeb61ca97624cba9512fd8"
   },
   "backend/src/server.js": {
     "mtime": 1788323108.8208098,
-    "seen": 1788404323.131445,
+    "seen": 1788419122.59548,
     "ast_hash": "c83e18e819917eb0392d8a931313dc3e",
     "semantic_hash": "c83e18e819917eb0392d8a931313dc3e"
   },
   "backend/src/services/purchase-order-service.js": {
     "mtime": 1788323108.8209834,
-    "seen": 1788404323.1314461,
+    "seen": 1788419122.595482,
     "ast_hash": "f09679b4242a19ae4810b6ef76838807",
     "semantic_hash": "f09679b4242a19ae4810b6ef76838807"
   },
   "backend/src/services/requisition-service.js": {
     "mtime": 1788323108.8210928,
-    "seen": 1788404323.131447,
+    "seen": 1788419122.5954828,
     "ast_hash": "1e998133fc20c789b692c5d97cc4f9d6",
     "semantic_hash": "1e998133fc20c789b692c5d97cc4f9d6"
   },
   "backend/tests/services/purchase-order-service.test.js": {
     "mtime": 1788341088.7098272,
-    "seen": 1788404323.131448,
+    "seen": 1788419122.595484,
     "ast_hash": "027c9970fe42578ee6c7195faf624bae",
     "semantic_hash": "027c9970fe42578ee6c7195faf624bae"
   },
   "backend/tests/services/requisition-service.test.js": {
     "mtime": 1788341088.7098196,
-    "seen": 1788404323.131449,
+    "seen": 1788419122.595485,
     "ast_hash": "51a9285c8251c340f7d2c4c8a76f4efb",
     "semantic_hash": "51a9285c8251c340f7d2c4c8a76f4efb"
   },
   "docker/postgres/init/00-init-mvp-db.sh": {
     "mtime": 1788323108.8218575,
-    "seen": 1788404323.131449,
+    "seen": 1788419122.595486,
     "ast_hash": "850bad8a05f5a65c597b8d8a6d723764",
     "semantic_hash": "850bad8a05f5a65c597b8d8a6d723764"
   },
   "frontend/src/App.vue": {
-    "mtime": 1788403158.3028333,
-    "seen": 1788404323.131451,
-    "ast_hash": "770fe4f6cbb0979592133080fdee2e99",
-    "semantic_hash": "770fe4f6cbb0979592133080fdee2e99"
+    "mtime": 1788417715.0767708,
+    "seen": 1788419122.5954869,
+    "ast_hash": "e892dbfb631bcd451ffcb993285a58d8",
+    "semantic_hash": "e892dbfb631bcd451ffcb993285a58d8"
   },
   "frontend/src/api.js": {
-    "mtime": 1788402619.6941142,
-    "seen": 1788404323.1314518,
-    "ast_hash": "b52712dd316738e30070471d9bb3fad3",
-    "semantic_hash": "b52712dd316738e30070471d9bb3fad3"
+    "mtime": 1788417715.0683572,
+    "seen": 1788419122.5954869,
+    "ast_hash": "395ebd14f8b3e9ce36f20825b21d0877",
+    "semantic_hash": "395ebd14f8b3e9ce36f20825b21d0877"
   },
   "frontend/src/main.js": {
     "mtime": 1788323108.8231094,
-    "seen": 1788404323.131453,
+    "seen": 1788419122.595493,
     "ast_hash": "3ff901c9b605c0792af51a665d2a268d",
     "semantic_hash": "3ff901c9b605c0792af51a665d2a268d"
   },
   "frontend/src/pages/DashboardPage.vue": {
-    "mtime": 1788323108.823206,
-    "seen": 1788404323.131454,
-    "ast_hash": "c846ce9eda3c414126ad13a998010adc",
-    "semantic_hash": "c846ce9eda3c414126ad13a998010adc"
+    "mtime": 1788417715.0865612,
+    "seen": 1788419122.5954938,
+    "ast_hash": "fbe470d6764eda1209274f869c6df151",
+    "semantic_hash": "fbe470d6764eda1209274f869c6df151"
   },
   "frontend/src/pages/RequisitionCreatePage.vue": {
     "mtime": 1788323108.8232918,
-    "seen": 1788404323.131456,
+    "seen": 1788419122.595497,
     "ast_hash": "417f2c97af6bea7681a661c41bb47956",
     "semantic_hash": "417f2c97af6bea7681a661c41bb47956"
   },
   "frontend/src/pages/RequisitionDetailPage.vue": {
     "mtime": 1788323108.823351,
-    "seen": 1788404323.131456,
+    "seen": 1788419122.595498,
     "ast_hash": "4e71d454f6ed4f8343743c0c595b4dd6",
     "semantic_hash": "4e71d454f6ed4f8343743c0c595b4dd6"
   },
   "frontend/src/pages/RequisitionListPage.vue": {
     "mtime": 1788323108.8234186,
-    "seen": 1788404323.131457,
+    "seen": 1788419122.595498,
     "ast_hash": "a6a73a39bcefeb790dd812000218875d",
     "semantic_hash": "a6a73a39bcefeb790dd812000218875d"
   },
   "frontend/src/router/index.js": {
-    "mtime": 1788403158.3027985,
-    "seen": 1788404323.131457,
-    "ast_hash": "c57f28bd2603cd329464322ecd0340e9",
-    "semantic_hash": "c57f28bd2603cd329464322ecd0340e9"
+    "mtime": 1788417715.0764678,
+    "seen": 1788419122.595498,
+    "ast_hash": "004bff0c339d469eaf716eb76a9aacc6",
+    "semantic_hash": "004bff0c339d469eaf716eb76a9aacc6"
   },
   "frontend/vite.config.js": {
     "mtime": 1788323108.8236656,
-    "seen": 1788404323.131459,
+    "seen": 1788419122.5955,
     "ast_hash": "9115e324d53b38692b1b3913144cfc92",
     "semantic_hash": "9115e324d53b38692b1b3913144cfc92"
   },
   "playwright.config.js": {
     "mtime": 1788323108.82391,
-    "seen": 1788404323.1314602,
+    "seen": 1788419122.595501,
     "ast_hash": "1dff95dba3fb3a024ea7b63de0b61920",
     "semantic_hash": "1dff95dba3fb3a024ea7b63de0b61920"
   },
   ".githooks/pre-push": {
     "mtime": 1788403838.5438771,
-    "seen": 1788404323.131438,
+    "seen": 1788419122.5954711,
     "ast_hash": "490ef6e824acfeb93494e161055d11fd",
     "semantic_hash": "490ef6e824acfeb93494e161055d11fd"
   },
   "backend/tests/app.test.js": {
     "mtime": 1788335897.7013855,
-    "seen": 1788404323.131447,
+    "seen": 1788419122.5954828,
     "ast_hash": "bacf2e44e2464d1deefee38e805b5790",
     "semantic_hash": "bacf2e44e2464d1deefee38e805b5790"
   },
   "frontend/babel.config.cjs": {
     "mtime": 1788339987.1384118,
-    "seen": 1788404323.1314502,
+    "seen": 1788419122.595486,
     "ast_hash": "f486d8f0ffdeccaf128df26337777d70",
     "semantic_hash": "f486d8f0ffdeccaf128df26337777d70"
   },
   "frontend/jest.config.cjs": {
     "mtime": 1788339987.125372,
-    "seen": 1788404323.1314502,
+    "seen": 1788419122.5954869,
     "ast_hash": "df48b7169634b57d236e7f57deed31a5",
     "semantic_hash": "df48b7169634b57d236e7f57deed31a5"
   },
   "frontend/src/components/PurchaseOrderHeaderForm.vue": {
     "mtime": 1788340969.288405,
-    "seen": 1788404323.1314518,
+    "seen": 1788419122.595488,
     "ast_hash": "4ac7bf77326811cbf8e9e2437a90337c",
     "semantic_hash": "4ac7bf77326811cbf8e9e2437a90337c"
   },
   "frontend/src/components/PurchaseOrderLineAllocationTable.vue": {
-    "mtime": 1788402619.693976,
-    "seen": 1788404323.131453,
-    "ast_hash": "241f0c8efbbe05df4997a3774089d2a4",
-    "semantic_hash": "241f0c8efbbe05df4997a3774089d2a4"
+    "mtime": 1788412182.2754865,
+    "seen": 1788419122.595489,
+    "ast_hash": "fcd98d87e83339996900250a987c70d3",
+    "semantic_hash": "fcd98d87e83339996900250a987c70d3"
   },
   "frontend/src/pages/PurchaseOrderCreatePage.vue": {
-    "mtime": 1788402619.6940491,
-    "seen": 1788404323.131454,
-    "ast_hash": "3c929a56fa6430c21067fe04f26c3ec7",
-    "semantic_hash": "3c929a56fa6430c21067fe04f26c3ec7"
+    "mtime": 1788412182.2759137,
+    "seen": 1788419122.595496,
+    "ast_hash": "a00d0652a0fe1a8fca661d56aaefb3d1",
+    "semantic_hash": "a00d0652a0fe1a8fca661d56aaefb3d1"
   },
   "frontend/src/pages/PurchaseOrderDetailPage.vue": {
-    "mtime": 1788403158.3172429,
-    "seen": 1788404323.131455,
-    "ast_hash": "35788f1c491bc64a7f76fc62fe13b003",
-    "semantic_hash": "35788f1c491bc64a7f76fc62fe13b003"
+    "mtime": 1788417715.0838673,
+    "seen": 1788419122.595496,
+    "ast_hash": "7fbc8b7ae21304a2f73ae3ebf632e7f7",
+    "semantic_hash": "7fbc8b7ae21304a2f73ae3ebf632e7f7"
   },
   "frontend/src/pages/PurchaseOrderListPage.vue": {
     "mtime": 1788403158.3170137,
-    "seen": 1788404323.131455,
+    "seen": 1788419122.595497,
     "ast_hash": "8ffbd9441a9fa7fe71f20920c91788d3",
     "semantic_hash": "8ffbd9441a9fa7fe71f20920c91788d3"
   },
   "frontend/tests/PurchaseOrderCreatePage.test.js": {
     "mtime": 1788402619.69409,
-    "seen": 1788404323.131458,
+    "seen": 1788419122.595499,
     "ast_hash": "e91ce97f5aa25a27d1af75aa2aa5f309",
     "semantic_hash": "e91ce97f5aa25a27d1af75aa2aa5f309"
   },
   "frontend/tests/PurchaseOrderDetailPage.test.js": {
     "mtime": 1788403158.316964,
-    "seen": 1788404323.131458,
+    "seen": 1788419122.595499,
     "ast_hash": "b8951e566fda57f390eeadd8eaa8820a",
     "semantic_hash": "b8951e566fda57f390eeadd8eaa8820a"
   },
   "frontend/tests/PurchaseOrderListPage.test.js": {
     "mtime": 1788403158.316918,
-    "seen": 1788404323.131459,
+    "seen": 1788419122.5955,
     "ast_hash": "3f5bb101df9b750c9739c3a04aeb262f",
     "semantic_hash": "3f5bb101df9b750c9739c3a04aeb262f"
+  },
+  "backend/src/routes/goods-receipt-routes.js": {
+    "mtime": 1788417715.0765085,
+    "seen": 1788419122.595478,
+    "ast_hash": "dfa4ddd1a644a7b14ff4cd9c312f04dc",
+    "semantic_hash": "dfa4ddd1a644a7b14ff4cd9c312f04dc"
+  },
+  "backend/src/services/goods-receipt-service.js": {
+    "mtime": 1788417715.0688648,
+    "seen": 1788419122.5954812,
+    "ast_hash": "3b29cc66a122ae0381e69c65669f804f",
+    "semantic_hash": "3b29cc66a122ae0381e69c65669f804f"
+  },
+  "backend/tests/services/goods-receipt-service.test.js": {
+    "mtime": 1788417715.083806,
+    "seen": 1788419122.595484,
+    "ast_hash": "1fc9be71ff3dfe5a2945f468505785be",
+    "semantic_hash": "1fc9be71ff3dfe5a2945f468505785be"
+  },
+  "frontend/src/pages/GoodsReceiptCreatePage.vue": {
+    "mtime": 1788417715.0688486,
+    "seen": 1788419122.5954938,
+    "ast_hash": "20ca83213756842de8be85baf47b1725",
+    "semantic_hash": "20ca83213756842de8be85baf47b1725"
+  },
+  "frontend/src/pages/GoodsReceiptDetailPage.vue": {
+    "mtime": 1788417715.069267,
+    "seen": 1788419122.595495,
+    "ast_hash": "5c1332ade20e5cdf1274b6c62e54f1b0",
+    "semantic_hash": "5c1332ade20e5cdf1274b6c62e54f1b0"
+  },
+  "frontend/src/pages/GoodsReceiptListPage.vue": {
+    "mtime": 1788417715.068872,
+    "seen": 1788419122.595495,
+    "ast_hash": "6517e2c54ab4f530cec9446f0b5696c4",
+    "semantic_hash": "6517e2c54ab4f530cec9446f0b5696c4"
+  },
+  "tests/e2e/gr-module.spec.js": {
+    "mtime": 1788417715.385922,
+    "seen": 1788419122.595501,
+    "ast_hash": "bf7f68b3f3bad5c81717cb277cf85385",
+    "semantic_hash": "bf7f68b3f3bad5c81717cb277cf85385"
+  },
+  "tests/e2e/po-module.spec.js": {
+    "mtime": 1788412182.3314435,
+    "seen": 1788419122.5955021,
+    "ast_hash": "6e31565bd59043cb0ae481b08460f099",
+    "semantic_hash": "6e31565bd59043cb0ae481b08460f099"
   }
 }
