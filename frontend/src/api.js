@@ -51,4 +51,27 @@ export const api = {
       method: 'POST',
     }),
   getRequisitionOpenLines: (id) => apiFetch(`/api/requisitions/${id}/open-lines`),
+  listPurchaseOrders: () => apiFetch('/api/purchase-orders'),
+  createPurchaseOrder: (payload) =>
+    apiFetch('/api/purchase-orders', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    }),
+  getPurchaseOrder: (id) => apiFetch(`/api/purchase-orders/${id}`),
+  submitPurchaseOrder: (id) =>
+    apiFetch(`/api/purchase-orders/${id}/submit`, {
+      method: 'POST',
+    }),
+  getPurchaseOrderOpenLines: (id) => apiFetch(`/api/purchase-orders/${id}/open-lines`),
+  listGoodsReceipts: () => apiFetch('/api/goods-receipts'),
+  createGoodsReceipt: (payload) =>
+    apiFetch('/api/goods-receipts', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    }),
+  getGoodsReceipt: (id) => apiFetch(`/api/goods-receipts/${id}`),
+  postGoodsReceipt: (id) =>
+    apiFetch(`/api/goods-receipts/${id}/post`, {
+      method: 'POST',
+    }),
 };

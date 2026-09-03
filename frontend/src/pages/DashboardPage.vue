@@ -35,7 +35,10 @@
     <div class="card-panel">
       <div class="card-panel-header">
         <h3>Recent Purchase Requisitions</h3>
-        <RouterLink to="/requisitions">View All</RouterLink>
+        <div class="card-panel-links">
+          <RouterLink to="/requisitions">View PRs</RouterLink>
+          <RouterLink to="/goods-receipts">View GRs</RouterLink>
+        </div>
       </div>
       <table>
         <thead>

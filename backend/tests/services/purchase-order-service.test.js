@@ -467,6 +467,15 @@ describe('purchase-order-service list functions', () => {
         updatedAt: '2026-05-01T10:00:00.000Z',
       },
     ]);
+    expect(db.query).toHaveBeenCalledWith(expect.stringContaining('ORDER BY created_at DESC'));
+  });
+
+  test('listPurchaseOrders returns an empty list when no purchase orders exist', async () => {
+    const db = {
+      query: jest.fn(() => ({ rows: [], rowCount: 0 })),
+    };
+
+    await expect(listPurchaseOrders(db)).resolves.toEqual([]);
   });
 
   test('getOpenPoLines returns null when PO not found', async () => {
